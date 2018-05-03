@@ -116,8 +116,8 @@ ul.social-in li  i.browser:hover{
 /*----*/
 .top-nav span.menu:before{
 	content: url(../images/menu.png)no-repeat 0px 0px;
-	cursor:pointer;	
-	width:100%;
+	cursor: pointer;	
+	width: 100%;
 }
 .top-nav span.menu{
 	display: none;
