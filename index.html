@@ -1,11 +1,265 @@
+<!--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<title>Homepage test</title>
-		<meta charset="utf-8">
-	</head>
+<head>
+<title>O'mletto's Homepage</title>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Portfolic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'><!--//fonts-->
+
+<link rel="icon" href="images/icon.png">
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!-- slide -->
+<script src="js/responsiveslides.min.js"></script>
+  <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+         auto: true,
+		 nav: true,
+		 speed: 500,
+		 namespace: "callbacks",
+		 pager: true,
+      });
+    });
+  </script>
+
+<style type="text/css">
+	.ulTop {
+		display: inline-block;
+		padding: 0;
+		margin: 0;	
+		vertical-align: middle;
+		list-style-type: none;
+		overflow: hidden;
+	}
+	ul.ulTop li {
+		float: left;
+		display: inline;
+	}
+	.fbButton {
+		width: 35px;
+		height: 35px;
+		background-image: url("images/facebook.png");
+		background-color: Transparent;
+		background-repeat: no-repeat;
+		background-size: 85%;
+		border: none;
+	}
+	.tButton {
+		width: 35px;
+		height: 35px;
+		background-image: url("images/twitter.png");
+		background-color: Transparent;
+		background-repeat: no-repeat;
+		background-size: 85%;
+		border: none;
+	}
+</style>
+</head>
+
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="top-nav">
+					<span class="menu"> </span>
+					<ul>
+						<li class="active" ><a href="index.html" >Home  </a> </li>
+						<li><a href="404.html" data-hover="About" > About </a></li>
+						<li><a href="404.html" data-hover="Music"> Music </a></li>
+						<li><a href="404.html" data-hover=" Websites">  Websites  </a></li>
+						<li><a href="404.html" data-hover="Contact">Contact </a></li>
+						
+					</ul>
+					<!--script-->
+					<script>
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(500, function(){
+							});
+						});
+					</script>
+				</div>
+			
+		
+				<div class="header-top-on">
+					<ul class="ulTop">
+						<li><a href="https://twitter.com/astronoid_404" target="_blank">
+							<button class="tButton"></button>
+						</a></li>	
+						<li><a href="https://www.facebook.com/astronoid.lagrange.9" target="_blank">
+							<button class="fbButton"></button>
+						</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		
+		<br/>
+		
+	</div> <!--end of header-->
+</div>
+
+
+<!---->
+	<div class="container">
+		<div class="banner-top">
+			<div class="slider">
+				<ul class="rslides" id="slider1">
+				  <li><img src="images/banner_1.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	
-	<body>
-		<h1>Testing</h1>
-	</body>
+	<!--content-->
+	<div class="content">
+		<div class="container">
+			<div class="port">
+				<h2>“ Video game, Jazz & Art ” <br/> ---- Welcome to <span>O'mletto's</span> homepage </h2>
+				<ul id="filters">
+					<li><span class="filter" data-filter="web music art">All</span><label class="arrow"></label></li>
+					<li><span class="filter" data-filter="web"> Websites </span><label class="arrow arrow1"></label></li>
+					<li><span class="filter" data-filter="music"> Music </span><label class="arrow arrow2"></label></li>
+					<li><span class="filter" data-filter="art"> Artworks </span><label class="arrow arrow3"></label></li>
+					<div class="clearfix"> </div>
+				</ul>			
+			</div>
+		
+			<div id="portfoliolist">
+				<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+					<div class="portfolio-wrapper">		
+						<a href="https://astronoid404.github.io/Pictlogica_Final_Fantasy_Wiki_CN/" target="_blank">
+							<img class="img-responsive" src="images/pff_ban.jpg" alt=""  /> 		
+						</a>
+						<div class="gir">						
+							<h5>最终幻想像素逻辑中文维基</h5>
+							<p>最终幻想像素逻辑&#40;Pictlogica Final Fantasy&#41;是一款基于FF背景和Picross
+							系统的手机游戏Picross系统的游戏。有移动版和3ds版两个版本。</p>													
+						</div>
+					</div>
+				</div>	
+							
+				<div class="clearfix"> </div>
+			</div>
+			
+			<!-- Script for gallery Here -->
+			<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+			<script type="text/javascript">
+			$(function () {	
+				var filterList = {
+					init: function () {
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixitup({
+							targetSelector: '.portfolio',
+							filterSelector: '.filter',
+							effects: ['fade'],
+							easing: 'snap',
+							// call the hover effect
+							onMixEnd: filterList.hoverEffect()
+						});				
+					},
+						
+					hoverEffect: function () {
+						// Simple parallax effect
+						$('#portfoliolist .portfolio').hover(
+							function () {
+								$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+								$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+							},
+							function () {
+								$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+								$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+							}		
+						);				
+					}
+				};	
+					// Run the show!
+					filterList.init();
+			});	
+			</script>
+			
+			<!-- Gallery Script Ends -->
+			<div class="about">
+				<h3>About Me</h3>
+				<div class="col-md-8 dem">
+					<p> I am a video game lover and composer. Frequently playing all kinds of Final Fantasy games &#40;
+					including FF mobile games &#41;, Tomb Rider series, and Dynasty Warrior series.	Feel free to 
+					message me in English, Chinese and Japanese.
+					</p>
+						<div class="call">
+							<ul class="ulTop">
+								<li><a href="https://twitter.com/astronoid_404" target="_blank">
+									<button class="tButton"></button>
+								</a></li>	
+								<li><a href="https://www.facebook.com/astronoid.lagrange.9" target="_blank">
+									<button class="fbButton"></button>
+								</a></li>						
+							</ul>
+						</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 men">
+					<img class="img-responsive" src="images/myAvatar.jpg" alt=""  />
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+		
+		
+		<!---->
+		<div class="footer">
+			<div class="container">
+				<p class="footer-class">
+					Copyright © 2015 Portfolic Template by 
+					<a href="http://w3layouts.com/" target="_blank">W3layouts</a>
+				</p>
+			</div>
+		 <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+		</div>
+
+</body>
 </html>
