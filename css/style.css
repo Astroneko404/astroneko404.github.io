@@ -35,6 +35,9 @@ h1,h2,h3,h4,h5,h6,label,p{
 .header-top-on{
 	float:right;
 }
+.header-top-on li{
+	padding: 0px 10px;
+}
 ul.social-in li{
 	display: inline-block;	
 }
