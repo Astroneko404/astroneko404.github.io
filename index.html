@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>O'mletto's Homepage</title>
+<title>O'mletto's Portfolio Homepage</title>
 
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -35,6 +35,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="icon" href="images/icon.png">
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+
 <!-- slide -->
 <script src="js/responsiveslides.min.js"></script>
 <script>
@@ -63,24 +64,6 @@ $(function () {
 	ul.ulTop li {
 		float: left;
 		display: inline;
-	}
-	.fbButton {
-		width: 35px;
-		height: 35px;
-		background-image: url("images/facebook.png");
-		background-color: Transparent;
-		background-repeat: no-repeat;
-		background-size: 85%;
-		border: none;
-	}
-	.tButton {
-		width: 35px;
-		height: 35px;
-		background-image: url("images/twitter.png");
-		background-color: Transparent;
-		background-repeat: no-repeat;
-		background-size: 85%;
-		border: none;
 	}
 </style>
 </head>
@@ -145,16 +128,31 @@ $(function () {
 			<div class="port">
 				<h2>“ Video game, Music & Pixel Art ” <br/> ---- Welcome to <span>O'mletto's</span> homepage </h2>
 				<ul id="filters">
-					<li><span class="filter" data-filter="game music art">All</span><label class="arrow"></label></li>
-					<li><span class="filter" data-filter="music">Music</span><label class="arrow arrow"></label></li>
-					<li><span class="filter" data-filter="art">Artworks</span><label class="arrow arrow"></label></li>
-					<li><span class="filter" data-filter="game">Video Game</span><label class="arrow arrow"></label></li>
+					<li><span class="filter" data-filter="game music art"> All </span><label class="arrow"></label></li>
+					<li><span class="filter" data-filter="music"> Music </span><label class="arrow arrow1"></label></li>
+					<li><span class="filter" data-filter="art"> Artworks </span><label class="arrow arrow2"></label></li>
+					<li><span class="filter" data-filter="game"> Video Game </span><label class="arrow arrow3"></label></li>
 					<div class="clearfix"> </div>
 				</ul>			
 			</div>
 		
 			<div id="portfoliolist">
-				<div class="portfolio music mix_all" data-cat="music" style="opacity: 1;">
+				
+				<div class="portfolio art game mix_all" data-cat="art game" style="display: inline-block; opacity: 1;">
+					<div class="portfolio-wrapper">		
+						<a href="docs/180918_sottr.html">
+							<img class="img-responsive" src="images/ban_sottr.jpg" alt=""  /> 		
+						</a>
+						<div class="gir">						
+							<h5>Screenshots from Shadow of the Tomb Raider</h5>
+							<p>
+								Some are for the SoTTR Screenshot Contest, some are just for fun.
+							</p>													
+						</div>
+					</div>
+				</div>
+				
+				<div class="portfolio music mix_all" data-cat="music" style="display: inline-block; opacity: 1;">
 					<div class="portfolio-wrapper">		
 						<a href="docs/180914_khremix1.html">
 							<img class="img-responsive" src="images/ban_kh3.jpg" alt=""  /> 		
@@ -168,7 +166,7 @@ $(function () {
 					</div>
 				</div>
 				
-				<div class="portfolio game mix_all" data-cat="game" style="opacity: 1;">
+				<div class="portfolio game mix_all" data-cat="game" style="display: inline-block; opacity: 1;">
 					<div class="portfolio-wrapper">		
 						<a href="docs/180906_ffxivideoarchive.html">
 							<img class="img-responsive" src="images/ffxi/banner_ffxi.png" alt=""  /> 		
@@ -180,7 +178,7 @@ $(function () {
 					</div>
 				</div>
 				
-				<div class="portfolio music mix_all" data-cat="music" style="opacity: 1;">
+				<div class="portfolio music mix_all" data-cat="music" style="display: inline-block; opacity: 1;">
 					<div class="portfolio-wrapper">		
 						<a href="https://www.youtube.com/watch?v=mPqln9xy_Fg" target="_blank">
 							<img class="img-responsive" src="images/ban_ultima.png" alt=""  /> 		
@@ -192,19 +190,19 @@ $(function () {
 					</div>
 				</div>
 				
-				<div class="portfolio music art mix_all" data-cat="music" style="opacity: 1;">
+				<div class="portfolio music mix_all" data-cat="music" style="display: inline-block; opacity: 1;">
 					<div class="portfolio-wrapper">		
 						<a href="docs/180513_bigbridge.html">
 							<img class="img-responsive" src="images/ban_bigbridge.png" alt=""  /> 		
 						</a>
 						<div class="gir">						
 							<h5>Battle at the Big Bridge <br/> &#40;Electro Swing Remix ft. ???&#41;</h5>
-							<p>A new electro swing remix of the classic track <i>Battle at the Big Bridge</i> by Mr. Nobuo Uematsu.</p>													
+							<p>Electro swing remix of the classic track <i>Battle at the Big Bridge</i></p>													
 						</div>
 					</div>
 				</div>
 				
-				<div class="portfolio music mix_all" data-cat="music" style="opacity: 1;">
+				<div class="portfolio music mix_all" data-cat="music" style="display: inline-block; opacity: 1;">
 					<div class="portfolio-wrapper">		
 						<a href="docs/ff30th.html">
 							<img class="img-responsive" src="images/ff30th.jpg" alt=""  /> 		
@@ -216,7 +214,7 @@ $(function () {
 					</div>
 				</div>	
 				
-				<div class="portfolio game mix_all" data-cat="game" style="opacity: 1;">
+				<div class="portfolio game mix_all" data-cat="game" style="display: inline-block; opacity: 1;">
 					<div class="portfolio-wrapper">		
 						<a href="https://astroneko404.github.io/Pictlogica_Final_Fantasy_Wiki_CN/" target="_blank">
 							<img class="img-responsive" src="images/pff_ban.jpg" alt=""  /> 		
@@ -229,7 +227,7 @@ $(function () {
 					</div>
 				</div>
 
-				<div class="portfolio art mix_all" data-cat="art" style="opacity: 1;">
+				<div class="portfolio art mix_all" data-cat="art" style="display: inline-block; opacity: 1;">
 					<div class="portfolio-wrapper">		
 						<a href="docs/jazz_banner.html">
 							<img class="img-responsive" src="images/scroll/20180502.png" alt=""  /> 		
@@ -279,8 +277,8 @@ $(function () {
 						);				
 					}
 				};	
-					// Run the show!
-					filterList.init();
+				// Run the show!
+				filterList.init();
 			});	
 			</script>
 			
