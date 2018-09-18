@@ -6,7 +6,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <title>Shadow of the Tomb Raider Screenshots</title>
 <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -33,6 +35,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style type="text/css">
 	.ulTop {
 		display: inline-block;
@@ -46,23 +50,94 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		float: left;
 		display: inline;
 	}
-	.fbButton {
-		width: 35px;
-		height: 35px;
-		background-image: url("../images/facebook.png");
-		background-color: Transparent;
-		background-repeat: no-repeat;
-		background-size: 85%;
-		border: none;
+	
+	#myImg {
+	  border-radius: 5px;
+	  cursor: pointer;
+	  transition: 0.3s;
 	}
-	.tButton {
-		width: 35px;
-		height: 35px;
-		background-image: url("../images/twitter.png");
-		background-color: Transparent;
-		background-repeat: no-repeat;
-		background-size: 85%;
-		border: none;
+
+	#myImg:hover {
+	  opacity: 0.7;
+	}
+
+	.modal {
+	  display: none;
+	  /* Hidden by default */
+	  position: fixed;
+	  /* Stay in place */
+	  z-index: 1;
+	  /* Sit on top */
+	  padding-top: 100px;
+	  /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  /* Full width */
+	  height: 100%;
+	  /* Full height */
+	  overflow: auto;
+	  /* Enable scroll if needed */
+	  background-color: rgb(0, 0, 0);
+	  /* Fallback color */
+	  background-color: rgba(0, 0, 0, 0.9);
+	  /* Black w/ opacity */
+	}
+
+	.modal-content {
+	  margin: auto;
+	  display: block;
+	  width: 80%;
+	  max-width: 700px;
+	}
+
+	#caption {
+	  margin: auto;
+	  display: block;
+	  width: 80%;
+	  max-width: 700px;
+	  text-align: center;
+	  color: #ccc;
+	  padding: 10px 0;
+	  height: 150px;
+	}
+
+	.modal-content,
+	#caption {
+	  animation-name: zoom;
+	  animation-duration: 0.6s;
+	}
+
+	@keyframes zoom {
+	  from {
+		transform: scale(0)
+	  }
+	  to {
+		transform: scale(1)
+	  }
+	}
+
+	.close {
+	  position: absolute;
+	  top: 15px;
+	  right: 35px;
+	  color: #f1f1f1;
+	  font-size: 40px;
+	  font-weight: bold;
+	  transition: 0.3s;
+	}
+
+	.close:hover,
+	.close:focus {
+	  color: #bbb;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	@media only screen and (max-width: 700px) {
+	  .modal-content {
+		width: 100%;
+	  }
 	}
 </style>
 
@@ -122,7 +197,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<span>Sep</span>
 							</div>
 							<div class="top-blog">
-								<h4 class="fast-in">Screenshots from Shadow of the Tomb Raider &#40;Ongoing&#41;</h4>
+								<h4 class="fast-in">Screenshots from Shadow of the Tomb Raider</h4>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -140,19 +215,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						
 						<div>
-							<img src="../images/sottr/2018.09.15 - 21.14.30.70.png" width=100%/> <br/><br/>
-							<img src="../images/sottr/2018.09.15 - 21.17.42.74.png" width=100%/> <br/><br/>
-							<img src="../images/sottr/2018.09.15 - 13.53.45.34.png" width=100%/> <br/><br/>
-							<img src="../images/sottr/2018.09.16 - 00.33.37.29.png" width=100%/> <br/><br/>
-							<img src="../images/sottr/2018.09.16 - 00.41.27.93.png" width=100%/> <br/><br/>
-							<img src="../images/sottr/2018.09.16 - 00.48.20.86.png" width=100%/> <br/><br/>
-							<img src="../images/sottr/2018.09.16 - 00.56.04.89.png" width=100%/> <br/><br/>
-							<img src="../images/sottr/2018.09.16 - 00.58.07.92.png" width=100%/> <br/><br/>
-							<img src="../images/sottr/2018.09.16 - 01.03.22.75.png" width=100%/> <br/><br/>
-							<img src="../images/sottr/2018.09.16 - 01.05.37.79.png" width=100%/> <br/><br/>
-							<img src="../images/sottr/2018.09.16 - 01.30.52.72.png" width=100%/> <br/><br/>
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.15 - 21.14.30.70.png" style="width:100%;max-width:400px" />
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.15 - 21.17.42.74.png" style="width:100%;max-width:400px" />
+							<br/><br/>
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.15 - 13.53.45.34.png" style="width:100%;max-width:400px" /> 
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 00.33.37.29.png" style="width:100%;max-width:400px" />
+							<br/><br/>
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 00.41.27.93.png" style="width:100%;max-width:400px" />
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 00.48.20.86.png" style="width:100%;max-width:400px" />
+							<br/><br/>
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 00.56.04.89.png" style="width:100%;max-width:400px" />
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 00.58.07.92.png" style="width:100%;max-width:400px" />
+							<br/><br/>
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 01.03.22.75.png" style="width:100%;max-width:400px" />
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 01.05.37.79.png" style="width:100%;max-width:400px" />
+							<br/><br/>
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 01.30.52.72.png" style="width:100%;max-width:400px" />
+							
+							<div id="myModal" class="modal">
+							  <span class="close">&times;</span>
+							  <img class="modal-content" id="img01">
+							  <div id="caption"></div>
+							</div>
+							
 						</div>
-
 					</div>
 					
 					<div class="single-profile">
@@ -179,29 +265,58 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 
-		<!---->
-		<div class="footer">
-			<div class="container">
-			<p class="footer-class">Copyright © 2015 Portfolic Template by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
-			</div>
-			 <script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-
+	<!---->
+	<div class="footer">
+		<div class="container">
+		<p class="footer-class">Copyright © 2015 Portfolic Template by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
 		</div>
+		 <script type="text/javascript">
+			$(document).ready(function() {
+				/*
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+				};
+				*/
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	
+	
+		
+	<script>
+		// create references to the modal...
+		var modal = document.getElementById('myModal');
+		// to all images -- note I'm using a class!
+		var images = document.getElementsByClassName('myImages');
+		// the image in the modal
+		var modalImg = document.getElementById("img01");
+		// and the caption in the modal
+		var captionText = document.getElementById("caption");
+
+		// Go through all of the images with our custom class
+		for (var i = 0; i < images.length; i++) {
+		  var img = images[i];
+		  // and attach our click listener for this image.
+		  img.onclick = function(evt) {
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		  }
+		}
+
+		var span = document.getElementsByClassName("close")[0];
+
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
 
 </body>
 </html>
