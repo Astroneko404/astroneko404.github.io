@@ -1,0 +1,323 @@
+I"D$<!--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<p>&lt;!DOCTYPE html&gt;</p>
+<html lang="en">
+
+<head>
+
+<title>Shadow of the Tomb Raider Screenshots</title>
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Portfolic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<!--fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
+<!--//fonts-->
+<link rel="icon" href="../images/icon.png" />
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style type="text/css">
+	.ulTop {
+		display: inline-block;
+		padding: 0;
+		margin: 0;	
+		vertical-align: middle;
+		list-style-type: none;
+		overflow: hidden;
+	}
+	ul.ulTop li {
+		float: left;
+		display: inline;
+	}
+	
+	#myImg {
+	  border-radius: 5px;
+	  cursor: pointer;
+	  transition: 0.3s;
+	}
+
+	#myImg:hover {
+	  opacity: 0.7;
+	}
+
+	.modal {
+	  display: none;
+	  /* Hidden by default */
+	  position: fixed;
+	  /* Stay in place */
+	  z-index: 1;
+	  /* Sit on top */
+	  padding-top: 100px;
+	  /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  /* Full width */
+	  height: 100%;
+	  /* Full height */
+	  overflow: auto;
+	  /* Enable scroll if needed */
+	  background-color: rgb(0, 0, 0);
+	  /* Fallback color */
+	  background-color: rgba(0, 0, 0, 0.9);
+	  /* Black w/ opacity */
+	}
+
+	.modal-content {
+	  margin: auto;
+	  display: block;
+	  width: 80%;
+	  max-width: 700px;
+	}
+
+	#caption {
+	  margin: auto;
+	  display: block;
+	  width: 80%;
+	  max-width: 700px;
+	  text-align: center;
+	  color: #ccc;
+	  padding: 10px 0;
+	  height: 150px;
+	}
+
+	.modal-content,
+	#caption {
+	  animation-name: zoom;
+	  animation-duration: 0.6s;
+	}
+
+	@keyframes zoom {
+	  from {
+		transform: scale(0)
+	  }
+	  to {
+		transform: scale(1)
+	  }
+	}
+
+	.close {
+	  position: absolute;
+	  top: 15px;
+	  right: 35px;
+	  color: #f1f1f1;
+	  font-size: 40px;
+	  font-weight: bold;
+	  transition: 0.3s;
+	}
+
+	.close:hover,
+	.close:focus {
+	  color: #bbb;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	@media only screen and (max-width: 700px) {
+	  .modal-content {
+		width: 100%;
+	  }
+	}
+</style>
+
+</head>
+
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="top-nav">
+					<span class="menu"><img src="../images/menu.png" />&lt;/img&gt;</span>
+					<ul>
+						<li class="active"><a href="../index.html"> Home </a></li>
+						<li><a href="../blog_2018.html" data-hover="Blog"> Blog </a></li>
+						<li><a href="../404.html" data-hover="Contact"> Contact </a></li>
+					</ul>
+					
+					<!--script-->
+					<script>
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(500, function(){
+							});
+						});
+					</script>
+				</div>
+		
+				<div class="header-top-on">
+					<ul class="ulTop">
+						<li><a href="https://twitter.com/astroneko404" target="_blank">
+							<i class="fa fa-twitter" style="font-size:32px"></i>
+						</a></li>	
+						<li><a href="https://www.youtube.com/channel/UCVmieVSyht0NH28lHmqVk0A" target="_blank">
+							<i class="fa fa-youtube-play" style="font-size:32px"></i>
+						</a></li>
+					</ul>
+				</div>
+				
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!--End of header-top-->
+		
+		<br /><br />
+	</div>
+	<!---->
+	
+	<!--content-->
+	<div class="content">
+		<div class="container">
+			<div class="single-text">
+				<div class="col-md-9">
+					<div class="single-top">
+						<div class="blog-top">
+							<div class="blog-left">
+								<b>18</b>
+								<span>Sep</span>
+							</div>
+							<div class="top-blog">
+								<h4 class="fast-in">Screenshots from Shadow of the Tomb Raider</h4>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						
+						<div class="grid-men">
+							<div class="col-md-5 sin-on">
+								<img class="img-responsive" src="../images/ban_SotTR.jpg" alt="" />
+							</div>
+							<div class="col-md-7 simply">
+								<p class="text-in">
+									Some are for the SoTTR Screenshot Contest, some are just for fun.
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						
+						<div>
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.15 - 21.14.30.70.png" style="width:100%;max-width:400px" />
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.15 - 21.17.42.74.png" style="width:100%;max-width:400px" />
+							<br /><br />
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.15 - 13.53.45.34.png" style="width:100%;max-width:400px" /> 
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 00.33.37.29.png" style="width:100%;max-width:400px" />
+							<br /><br />
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 00.41.27.93.png" style="width:100%;max-width:400px" />
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 00.48.20.86.png" style="width:100%;max-width:400px" />
+							<br /><br />
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 00.56.04.89.png" style="width:100%;max-width:400px" />
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 00.58.07.92.png" style="width:100%;max-width:400px" />
+							<br /><br />
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 01.03.22.75.png" style="width:100%;max-width:400px" />
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 01.05.37.79.png" style="width:100%;max-width:400px" />
+							<br /><br />
+							<img class="myImages" id="myImg" src="../images/sottr/2018.09.16 - 01.30.52.72.png" style="width:100%;max-width:400px" />
+							
+							<div id="myModal" class="modal">
+							  <span class="close">&times;</span>
+							  <img class="modal-content" id="img01" />
+							  <div id="caption"></div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<div class="single-profile">
+						<h4>RELATED POSTS</h4>
+						<div class="single-left ">					
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>	
+			
+			
+				<div class="col-md-3 categories-grid">
+					<div class="grid-categories">
+						<h4>TIMELINE</h4>
+						<ul class="popular">
+							<li><a href="../blog_2018.html"><span class="dot"> </span>2018</a></li>
+							<li><a href="../blog_2017.html"><span class="dot"> </span>2017</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<!---->
+	<div class="footer">
+		<div class="container">
+		<p class="footer-class">Copyright © 2015 Portfolic Template by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+		</div>
+		 <script type="text/javascript">
+			$(document).ready(function() {
+				/*
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+				};
+				*/
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	
+	
+		
+	<script>
+		// create references to the modal...
+		var modal = document.getElementById('myModal');
+		// to all images -- note I'm using a class!
+		var images = document.getElementsByClassName('myImages');
+		// the image in the modal
+		var modalImg = document.getElementById("img01");
+		// and the caption in the modal
+		var captionText = document.getElementById("caption");
+
+		// Go through all of the images with our custom class
+		for (var i = 0; i < images.length; i++) {
+		  var img = images[i];
+		  // and attach our click listener for this image.
+		  img.onclick = function(evt) {
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		  }
+		}
+
+		var span = document.getElementsByClassName("close")[0];
+
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+
+</body>
+</html>
+:ET

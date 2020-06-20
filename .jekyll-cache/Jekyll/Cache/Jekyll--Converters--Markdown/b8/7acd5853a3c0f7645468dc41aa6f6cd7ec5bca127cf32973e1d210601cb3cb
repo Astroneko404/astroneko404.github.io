@@ -1,0 +1,217 @@
+I"L<!--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<p>&lt;!DOCTYPE html&gt;</p>
+<html lang="en">
+<head>
+<title>Kingdom Hearts Remix Project Wave 1</title>
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Portfolic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<!--fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
+<!--//fonts-->
+<link rel="icon" href="../images/icon.png" />
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+
+<style type="text/css">
+	.ulTop {
+		display: inline-block;
+		padding: 0;
+		margin: 0;	
+		vertical-align: middle;
+		list-style-type: none;
+		overflow: hidden;
+	}
+	ul.ulTop li {
+		float: left;
+		display: inline;
+	}
+	.fbButton {
+		width: 35px;
+		height: 35px;
+		background-image: url("../images/facebook.png");
+		background-color: Transparent;
+		background-repeat: no-repeat;
+		background-size: 85%;
+		border: none;
+	}
+	.tButton {
+		width: 35px;
+		height: 35px;
+		background-image: url("../images/twitter.png");
+		background-color: Transparent;
+		background-repeat: no-repeat;
+		background-size: 85%;
+		border: none;
+	}
+</style>
+
+</head>
+
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="top-nav">
+					<span class="menu"><img src="../images/menu.png" />&lt;/img&gt;</span>
+					<ul>
+						<li class="active"><a href="../index.html"> Home </a></li>
+						<li><a href="../blog_2018.html" data-hover="Blog"> Blog </a></li>
+						<li><a href="../404.html" data-hover="Contact"> Contact </a></li>
+					</ul>
+					
+					<!--script-->
+					<script>
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(500, function(){
+							});
+						});
+					</script>
+				</div>
+		
+				<div class="header-top-on">
+					<ul class="ulTop">
+						<li><a href="https://twitter.com/astroneko404" target="_blank">
+							<i class="fa fa-twitter" style="font-size:32px"></i>
+						</a></li>	
+						<li><a href="https://www.youtube.com/channel/UCVmieVSyht0NH28lHmqVk0A" target="_blank">
+							<i class="fa fa-youtube-play" style="font-size:32px"></i>
+						</a></li>
+					</ul>
+				</div>
+				
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!--End of header-top-->
+		
+		<br /><br />
+	</div>
+	<!---->
+	
+	<!--content-->
+	<div class="content">
+		<div class="container">
+			<div class="single-text">
+				<div class="col-md-9">
+					<div class="single-top">
+						<div class="blog-top">
+							<div class="blog-left">
+								<b>14</b>
+								<span>Sep</span>
+							</div>
+							<div class="top-blog">
+								<h4 class="fast-in">Kingdom Hearts Remix Project: Wave 1</h4>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						
+						<div class="grid-men">
+							<div class="col-md-5 sin-on">
+								<img class="img-responsive " src="../images/ban_kh3.jpg" alt="" />
+							</div>
+							<div class="col-md-7 simply">
+								<p class="text-in">
+									Trying to make classic sounds more classic.<br />
+									A future funk remix of KH1's theme song Hikari.
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						
+						<div>
+							I made two version of this remix, one is performed by Megurine Luka &#40;This version was also
+							used as a demo version&#41;, the other is performed by <a href="http://space.bilibili.com/436256/#/" target="_blank">A. Ikari</a>.
+							<br /><br />
+							
+							Audio: <br /><br />
+							<font color="004d80">Megurine Luka Version</font><br /><br />
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/4PBZ8r8MoHA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+							<br /><br />
+							<audio controls="">
+								<source src="https://cdn.rawgit.com/Astroneko404/Music_Works/e6fd7597/Cover%20%26%20Remix/Hikari%20(O'mletto's%20Remix)%20(Luka%20Ver.).mp3" type="audio/mpeg" />
+								Your browser does not support the audio element.
+							</audio>
+							<br /><br />
+							<font color="004d80">A. Ikari Version</font><br /><br />
+							<audio controls="">
+								<source src="https://cdn.rawgit.com/Astroneko404/Music_Works/e6fd7597/Cover%20%26%20Remix/Hikari%20(O'mletto's%20Remix)%20(A.%20Ikari%20Ver.).mp3" type="audio/mpeg" />
+								Your browser does not support the audio element.
+							</audio>
+							<br /><br />
+						</div>
+
+					</div>
+					
+					<div class="single-profile">
+						<h4>RELATED POSTS</h4>
+						<div class="single-left ">					
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>	
+			
+			
+				<div class="col-md-3 categories-grid">
+					<div class="grid-categories">
+						<h4>TIMELINE</h4>
+						<ul class="popular">
+							<li><a href="../blog_2018.html"><span class="dot"> </span>2018</a></li>
+							<li><a href="../blog_2017.html"><span class="dot"> </span>2017</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+		<!---->
+		<div class="footer">
+			<div class="container">
+			<p class="footer-class">Copyright © 2015 Portfolic Template by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+			</div>
+			 <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+		</div>
+
+</body>
+</html>
+:ET
