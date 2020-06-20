@@ -1,0 +1,20 @@
+## Settings
+title: Astron Lagrange's Homepage
+owner: "Astron"
+url: "https://astroneko404.github.io"
+baseurl: ""
+permalink: /:title/
+description: ""
+markdown: kramdown
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+## Global Variables
+github: "Astroneko404"
+# path to: css/, fonts/, img/ and js/
+assets_path: "/assets" # i.e. "/assets"
+statement: "Designed by DeerRIDER, All Rights Reserved"
+# default max toc levels: 1 - 6 (h1 - h6)
+toc_level: 3
+# texts randomly displayed in background
+bgtext: "αβγδεζηθικλμνξοπρστυφχψω∷∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌√"
