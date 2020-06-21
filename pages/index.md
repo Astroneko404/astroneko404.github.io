@@ -21,4 +21,6 @@ Astron Lagrange (a.k.a O'mletto), the owner of this homepage, is
 * <a href="https://www.youtube.com/channel/UCVmieVSyht0NH28lHmqVk0A" target="_blank"> My YouTube Channel
 * <a href="https://twitter.com/astroneko404" target="_blank"> Twitter (No longer used since 2019)
 
-<a href="https://psnprofiles.com/Astray404"><img src="https://card.psnprofiles.com/1/Astray404.png" border="0" target="_blank"></a>
+<a href="https://psnprofiles.com/Astray404">
+<img src="https://card.psnprofiles.com/1/Astray404.png" target="_blank">
+</a>
