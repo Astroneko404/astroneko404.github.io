@@ -15,4 +15,4 @@ A new electro swing remix of the classic track <i>Battle at the Big Bridge</i> o
 
 Here is the pixel art I drew for this remix, sorry for my bad drawing. <br/> d(๑> ₃ <)b;<br/><br/>
 
-![]("../old_backup/images/bigbridge_720p.jpg")
+<img src="https://user-images.githubusercontent.com/33112694/85235577-ad845f80-b448-11ea-9b30-385b527e9eb0.jpg" height = "350" />
