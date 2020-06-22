@@ -18,3 +18,7 @@ statement: "Designed by DeerRIDER, All Rights Reserved"
 toc_level: 3
 # texts randomly displayed in background
 bgtext: "αβγδεζηθικλμνξοπρστυφχψω∷∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌√"
+# CDN
+cdn:
+     jsdelivr:
+         enabled: true

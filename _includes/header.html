@@ -6,7 +6,7 @@
                 class="li_left">
                 <!-- home -->
                 {% if page.home_btn != false %}
-                    <a class="header_btn" href="{{ site.url }}{{ site.baseurl }}">
+                    <a class="header_btn" href="{{ assets_base_url }}{{ site.baseurl }}">
                         <i class="fa fa-home">
                             {% if page.btn_text != false %}
                                 <p class="btn_text">Home</p>
@@ -128,7 +128,7 @@
 {% endif %}
 <!-- encrypt and decrypt -->
 {% if page.encrypted_text == true %}
-    <script src="{{ site.url }}{{ site.baseurl }}{{ site.assets_path }}/js/sjcl.js" async></script>
+    <script src="{{ assets_base_url }}{{ site.baseurl }}{{ site.assets_path }}/js/sjcl.js" async></script>
     <script>
   function decrypt_all(pwd, class_name) {
     var elem_clct = document.getElementsByClassName(class_name);
