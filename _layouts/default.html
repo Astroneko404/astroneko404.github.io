@@ -1,12 +1,13 @@
+{% assign assets_base_url = site.url %}
+{% if site.cdn.jsdelivr.enabled %}
+    {% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
+{% endif %}
+
 <!DOCTYPE html>
 <html>
   {% include head.html %}
   <body class="page">
     {% include background.html %}
-    {% assign assets_base_url = site.url %}
-    {% if site.cdn.jsdelivr.enabled %}
-        {% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
-    {% endif %}
     <div class="container" id="ctner">
       {% include header.html %}
       <div class="div_article" id="div_atcl">

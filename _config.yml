@@ -21,4 +21,4 @@ bgtext: "αβγδεζηθικλμνξοπρστυφχψω∷∫∮∝∞∧∨�
 # CDN
 cdn:
      jsdelivr:
-         enabled: true
+         enabled: false
