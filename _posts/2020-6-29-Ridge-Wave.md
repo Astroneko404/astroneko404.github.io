@@ -40,6 +40,10 @@ Last month I was listening R4's OST, occasionally did some playback speed tricks
 <source id="mp3" src="../music/remix/R_WAVE/06 Quiet Curves.mp3" type="audio/mpeg">
 </audio>
 
+### Links
+* YouTube: [https://youtu.be/TGh8tRi6Xyg](https://youtu.be/TGh8tRi6Xyg)
+* Bandcamp: [http://astroneko404.bandcamp.com/album/-](http://astroneko404.bandcamp.com/album/-)
+
 ### Special Thanks
 Appreciate the help from Jing.W for the cover image design
 

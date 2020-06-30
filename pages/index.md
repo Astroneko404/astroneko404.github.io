@@ -18,9 +18,10 @@ Astron Lagrange (a.k.a O'mletto), the owner of this homepage, is
 * A future linguist
 
 ### Social Media
-* <a href="https://www.youtube.com/channel/UCVmieVSyht0NH28lHmqVk0A" target="_blank"> My YouTube Channel
+* <a href="https://www.youtube.com/channel/UCVmieVSyht0NH28lHmqVk0A" target="_blank">YouTube Channel
+* <a href="https://astroneko404.bandcamp.com/" target="_blank"> Bandcamp
 * <a href="https://twitter.com/astroneko404" target="_blank"> Twitter (No longer used since 2019)
 
-<a href="https://psnprofiles.com/Astray404">
-<img src="https://card.psnprofiles.com/1/Astray404.png" target="_blank">
+<a href="https://psnprofiles.com/Astray404" target="_blank">
+<img src="https://card.psnprofiles.com/1/Astray404.png" />
 </a>
