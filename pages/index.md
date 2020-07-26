@@ -19,7 +19,7 @@ Astron Lagrange (a.k.a O'mletto), the owner of this homepage, is
 
 ### Social Media
 * <a href="https://www.youtube.com/channel/UCVmieVSyht0NH28lHmqVk0A" target="_blank">YouTube Channel
-* <a href="https://astroneko404.bandcamp.com/" target="_blank"> Bandcamp
+* <a href="https://astroneko404.bandcamp.com/music" target="_blank"> Bandcamp
 * <a href="https://twitter.com/astroneko404" target="_blank"> Twitter (No longer used since 2019)
 
 <a href="https://psnprofiles.com/Astray404" target="_blank">
