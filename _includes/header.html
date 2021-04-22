@@ -9,7 +9,7 @@
                     <a class="header_btn" href="{{ assets_base_url }}{{ site.baseurl }}">
                         <i class="fa fa-home">
                             {% if page.btn_text != false %}
-                                <p class="btn_text">Home</p>
+                                <p class="btn_text">HOME</p>
                             {% endif %}
                         </i>
                     </a>
@@ -19,7 +19,7 @@
                     <a class="header_btn" href="https://github.com/{{ site.github }}">
                         <i class="fa fa-github">
                             {% if page.btn_text != false %}
-                                <p class="btn_text">Github</p>
+                                <p class="btn_text">GITHUB</p>
                             {% endif %}
                         </i>
                     </a>
@@ -29,7 +29,7 @@
                     <a class="header_btn" id="mxmz_btn" onclick="toggle_maximize()">
                         <i class="fa fa-window-maximize">
                             {% if page.btn_text != false %}
-                                <p class="btn_text" id="mxmz_text">Maximize</p>
+                                <p class="btn_text" id="mxmz_text">MAXIMIZE</p>
                             {% endif %}
                         </i>
                     </a>
@@ -43,7 +43,7 @@
                     <a class="header_btn" onclick="scroll_percentage(-0.88)">
                         <i class="fa fa-backward">
                             {% if page.btn_text != false %}
-                                <p class="btn_text">Prev</p>
+                                <p class="btn_text">PREV</p>
                             {% endif %}
                         </i>
                     </a>
@@ -51,7 +51,7 @@
                     <a class="header_btn" onclick="scroll_percentage(0.88)">
                         <i class="fa fa-forward">
                             {% if page.btn_text != false %}
-                                <p class="btn_text">Next</p>
+                                <p class="btn_text">NEXT</p>
                             {% endif %}
                         </i>
                     </a>
@@ -59,7 +59,7 @@
                     <a class="header_btn popup_btn" onclick="toggle_toc()">
                         <i class="fa fa-bars">
                             {% if page.btn_text != false %}
-                                <p class="btn_text">Content</p>
+                                <p class="btn_text">CONTENT</p>
                             {% endif %}
                         </i>
                     </a>
@@ -110,7 +110,7 @@
       ctner.style.top = "0";
       ctner.style.maxWidth = "100%";
       if (document.getElementById("mxmz_text")) {
-        document.getElementById("mxmz_text").innerHTML = "Restore";
+        document.getElementById("mxmz_text").innerHTML = "RESTORE";
       }
       ctner_state = 1;
     } else if (ctner_state == 1) {
@@ -119,7 +119,7 @@
       ctner.style.top = "2%";
       ctner.style.maxWidth = "1240px";
       if (document.getElementById("mxmz_text")) {
-        document.getElementById("mxmz_text").innerHTML = "Maximize";
+        document.getElementById("mxmz_text").innerHTML = "MAXIMIZE";
       }
       ctner_state = 0;
     }

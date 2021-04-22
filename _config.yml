@@ -1,7 +1,7 @@
 ## Settings
-title: Astron Lagrange's Homepage
-owner: "Astron"
-url: "https://astroneko404.github.io"
+title: "ASTRON LAGRANGE'S HOMEPAGE"
+owner: "ASTRON"
+url: "https://astroneko404.space"
 baseurl: ""
 permalink: /:title/
 description: ""
@@ -13,12 +13,8 @@ webrick:
 github: "Astroneko404"
 # path to: css/, fonts/, img/ and js/
 assets_path: "/assets" # i.e. "/assets"
-statement: "Designed by DeerRIDER, All Rights Reserved"
+statement: "DESIGNED BY DEERRIDER, ALL RIGHTS RESERVED"
 # default max toc levels: 1 - 6 (h1 - h6)
 toc_level: 3
 # texts randomly displayed in background
 bgtext: "αβγδεζηθικλμνξοπρστυφχψω∷∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌√"
-# CDN
-cdn:
-     jsdelivr:
-         enabled: false

@@ -14,18 +14,18 @@ $image-background: none;
   font-family: "Fira Code Online";
   src: url("../fonts/FiraCode-Regular.woff");
 }
-$font-family: 
-"Fira Code", 
-"Source Code Pro", 
-"Fira Code Online", 
-"Source-Han-Sans-Medium", 
+$font-family:
+"Fira Code",
+"Source Code Pro",
+"Fira Code Online",
+"Source-Han-Sans-Medium",
 "PingFang SC",
-"Hiragino Sans GB", 
-"Heiti SC", 
-"Microsoft YaHei", 
+"Hiragino Sans GB",
+"Heiti SC",
+"Microsoft YaHei",
 "WenQuanYi Micro Hei",
-Helvetica, 
-Tahoma, 
+Helvetica,
+Tahoma,
 Arial,
 sans-serif;
 $font-size-h1: 23px;
@@ -52,7 +52,8 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
   background-image: $image-background;
   font-size: $font-size-primary;
   color: $color-primary;
-  font-family: $font-family;
+  // font-family: $font-family;
+  font-family: "Courier";
   .div_bg {
     top: -4px;
     height: 100%;
@@ -112,7 +113,8 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
               margin: 0;
               display: inline-block;
               text-transform: capitalize;
-              font-family: $font-family;
+              // font-family: $font-family;
+              font-family: "Courier";
               font-size: $font-smaller;
             }
             .btn_text:hover {

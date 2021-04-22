@@ -1,7 +1,7 @@
 ---
 title: XCURSOR THEME TUTORIAL v1.0
 layout: post
-category: Code
+category: Misc
 date: 2019-9-27
 ---
 
@@ -141,7 +141,7 @@ lrwxrwxrwx 1 root root     17 Aug 27 11:55 v_double_arrow -> sb_v_double_arrow
 ```
 Since there are lots of files, I recommend using shell scripts to generate xcursor files.<br/>
 Notice that some cursor files have a hash name, like `9081237383d90e509aa00f00170e968f`.
-This is because that some programs may have their custom cursors. 
+This is because that some programs may have their custom cursors.
 In order to let our cursor theme work in these programs, we also need to create xcursor files for them.<br/>
 For example:
 ```
@@ -183,6 +183,6 @@ Notes: Some tweak tools such as GNOME Tweaks might be useful.<br/>
 $ sudo add-apt-repository universe
 $ sudo apt install gnome-tweak-tool
 ```
-2. Copy the whole folder of our theme in `~/.icons`. If there is no such a folder, we could create one using `mkdir` or install another theme using `apt-get`. 
-3. \[Optional(?)\] For user-specific configuration, put the `index.theme` in `~/.icons/default/`; for system-wide configuration, put the `index.theme` in `/usr/share/icons/default/`. 
+2. Copy the whole folder of our theme in `~/.icons`. If there is no such a folder, we could create one using `mkdir` or install another theme using `apt-get`.
+3. \[Optional(?)\] For user-specific configuration, put the `index.theme` in `~/.icons/default/`; for system-wide configuration, put the `index.theme` in `/usr/share/icons/default/`.
 4. Log out and re-login, and the theme could be seen in GNOME Tweaks.
