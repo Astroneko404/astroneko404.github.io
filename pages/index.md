@@ -35,5 +35,5 @@ SOCIAL MEDIA
 
 <br/>
 <a href="https://psnprofiles.com/Astray404" target="_blank">
-<img src="https://card.psnprofiles.com/1/Astray404.png" /></a>
+<img src="https://card.psnprofiles.com/2/Astray404.png" /></a>
 <img src="../assets/img/tffac_profile.jpg" width="35%"/>
