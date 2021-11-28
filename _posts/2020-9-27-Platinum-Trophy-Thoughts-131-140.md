@@ -75,7 +75,7 @@ Such an amazing JRPG game that all those RNG features give a boost to the gamepl
 
 \- Unbalanced formation system
 
-### #137 - Hakuouki Kyoka Roku & Plat #138 Soukai Buccaneers
+### #137 - Hakuouki Kyoka Roku & #138 Soukai Buccaneers
 *Difficulty: 1/10*
 
 Didn't have much time last month so I focused on two visual novels. Hakuouki is more history based while Soukai Buccaneers is more like a fantasy rpg. Honestly I've only watched the anime of Hakuouki, and of course the game explains more than the 12-episode anime. Highly recommend this. For Soukai Buccaneers, the storyline is much less fun to read, and some characters with a "nice-guy" personality somehow seems surreal, making me "uncomfortable". At least this game has a story tracking system so I don't have to re-read all previous texts (facepalm)
