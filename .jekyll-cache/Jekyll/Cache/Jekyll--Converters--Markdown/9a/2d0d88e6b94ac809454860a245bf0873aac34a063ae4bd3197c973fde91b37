@@ -1,0 +1,50 @@
+I"d<p>The purpose of this note is a reminder that denotes several key points during importing ADX2 to Unreal Engine 4.</p>
+
+<ol>
+  <li>
+    <p>Pay attention to your Visual Studio version:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Unreal Engine Version</th>
+          <th>Visual Studio Version</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>4.25 or Later</td>
+          <td>VS 2019 (Default)</td>
+        </tr>
+        <tr>
+          <td>4.22 or Later</td>
+          <td>VS 2017 / VS 2019</td>
+        </tr>
+        <tr>
+          <td>4.15 or Later</td>
+          <td>VS 2017</td>
+        </tr>
+        <tr>
+          <td>4.10 to 4.14</td>
+          <td>VS 2015</td>
+        </tr>
+        <tr>
+          <td>4.2 to 4.9</td>
+          <td>VS 2013</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>While installing Visual Studio, make sure to check the “Game development with C++”, which includes C++ profiling tools and other toolkits.</li>
+  <li>If anything above is missing, after copying the “Plugins” folder from the CRIWARE folder to your project folder, you may see following error message after rebuilding modules in your project:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>YourProject could not be compiled. Try rebuilding from source manually.
+</code></pre></div></div>
+
+<h3 id="reference">Reference</h3>
+<ol>
+  <li><a href="https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/DevelopmentSetup/VisualStudioSetup/" target="_blank">
+Setting Up Visual Studio for Unreal Engine</a></li>
+</ol>
+:ET
