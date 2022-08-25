@@ -8,12 +8,12 @@ date: 2020-3-26
 Original post: <br/>
 [https://forum.psnprofiles.com/topic/81083-astray404s-trophy-shelf/](https://forum.psnprofiles.com/topic/81083-astray404s-trophy-shelf/)
 
-### #101 - Conception 2: Children of the Seven Stars
+## #101 - Conception 2: Children of the Seven Stars
 *Difficulty: 4/10*
 
 As I said in one of my status thread, this is a psvita game that I started 5 years ago. It's a combination of visual novel and turn-based RPG. It is not that fun to play, maybe because I'm not that interested in RPG games (lol) or because of its roguelike maze design. Collecting all events are frustrating because I need to save/load a lot in order to get different versions of the same event. But overall it is not that hard. I would recommend getting the max affinity level in the 1st playthrough and collecting all max-level events, and then doing a speedrun (about 6 hours) on the 2nd play through (all items, character levels and city levels will be saved) and get all other events that is relative to the affinity level. 
 
-### #102 Taiko no Tatsujin V Version
+## #102 Taiko no Tatsujin V Version
 *Difficulty: 3/10*
 
 Maybe because I've played many kinds of rhythm games like Beatmania (not the iidx one, that one's too hard  ), DDR, Project Diva series, and Theatrhythm FF series, TBH I didn't find it too difficult for me, even with the 25 tracks on Oni difficulty. The buttons on psvita are way harder to press than the touch screen of 3ds, so I have to get used to the psvita buttons. 
@@ -22,7 +22,7 @@ If you have difficulty plat this game, my suggestion would be<br/>
 1. Practicing different patterns like RBR, RBB, RBBR, and so on;
 2. The crown count in vita = crowns in normal mode + crowns in Shinuchi(真打) mode, so basically choose 13 easy tracks and play them in two different modes.
 
-### #103 Fate/Hollow Ataraxia
+## #103 Fate/Hollow Ataraxia
 *Difficulty: 1/10*
 
 A classic visual novel which is a sequel (?) of Fate/Stay Night. If you could understand Japanese than I would highly recommend read it instead of pressing fast forward button just for those trophies. Basically I bought this for the mini-game Capsule Servant cuz it's exclusive on the vita version. 
@@ -32,13 +32,12 @@ I found a guide online and arrange the text in a more readable doc file. In case
 
 (Yes it is in Japanese :V)
 
-### #104 Persona 3 Dancing in Moonlight
-### #105 Persona 4 Dancing All Night
+## #104 Persona 3 Dancing in Moonlight & #105 Persona 4 Dancing All Night
 *Difficulty: 2/10*
 
 I would like to say that those remixes are pretty good. I will definitely add some amazing tracks to my playlist if I'm able to get the OST. This series is not that difficult since for P3D you can get the "Auto Scratch" modifier at the start of the game, and although P4D does not have the Auto Scratch, the notes are still readable so you don't have to actually remember the pattern.
 
-### #106 Persona 5 Dancing in Starlight
+## #106 Persona 5 Dancing in Starlight
 *Difficulty: 2/10*
 
 Rhythm games from Atlus/Sega always have the best character & stage designs and visual effects, and this is one of the reasons that I love & hate their rhythm games lol. Watching your fav characters dancing while keep pressing buttons is not a easy task but thank god this series is not that difficult. Sometimes those visual effects just block your view and make you unable to detect notes. However, since it is just a fan-service game I won't complain that much. 
@@ -53,7 +52,7 @@ Some of my fav songs in this game:
 
 I'll definitely try P5 or P5R in the future if I have time for a JRPG with long story line.
 
-### #107 Ridge Racer (PS Vita)
+## #107 Ridge Racer (PS Vita)
 *Difficulty: 4/10*
 
 TBH I'm not a racing game player, I bought this game just for its fascinating music @_@ 
@@ -64,14 +63,14 @@ The base game only contains 3 maps and 5 cars, and I highly recommend buy the ga
 
 Verdict: Everything other than CR farming is fun to play.
 
-### #108 Devil May Cry 2 (PS4)
+## #108 Devil May Cry 2 (PS4)
 *Difficulty: 2/10 (I HAVE THE CODE)*
 
 I sort of understand why this game is being criticized so many years after I got the plat of this game. Have to say that this game is pretty horrible on camera and action design. Like some old Resident Evil games, the camera rotates wherever it likes to, plus the map menu does not describe the map appropriately (which direction am I facing to?), making the map indistinguishable. For the action part, Dante seems to have muscle weakness that it takes forever for him to swing his sword, but Trish is fine, or maybe the best character in the whole DMC2. The time for combo chaining is too short that you have to hold the gun button all the time to keep your S-rank combo. Sometimes the sub-machine gun and the launcher seems too OP that makes you don't wanna do the melee attack if not looking for a perfect S-rank on mission. 
 
 Gotta put DMC3 on my must-play list, but I need to play some 3A titles to get some rest... :V
 
-### #109 - Uta Kumi 575
+## #109 - Uta Kumi 575
 *Difficulty: 4~5/10* 
 
 The worst and the 3rd challenging rhythm game that I have ever played on my PS consoles (Beatmania iidx and Taiko are the 1st and 2nd definitely). 
@@ -80,7 +79,7 @@ Basically it is a Japanese word/vocab puzzle game that asks you to fill-in-the-b
 
 Thank god I've learned Japanese for several years so that I could even be able to play this game. Cuz for the plat, you need to FC on all songs while choosing all lyrics correctly. For most songs you could pause and choose the correct lyrics combination but not all of them are cheat-able.
 
-### #110 - MGS 3 (PS Vita)
+## #110 - MGS 3 (PS Vita)
 *Difficulty: 5/10* 
 
 I always have a feeling that Hideo Kojima is the most overrated dev. My friend recommended this game to me several years ago, and I bought both the MGS HD collection on my vita, and a MGS 3D on 3ds, which I think it's mostly identical to MGS 3. It's my first time to play this game seriously on vita, and... it sucks. 

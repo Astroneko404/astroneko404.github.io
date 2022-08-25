@@ -1,0 +1,9 @@
+I"+<ul id="ul_toc" class="ul_toc">
+  <li><a href="#introduction-to-pythons-subprocess-module">Introduction to Python’s Subprocess Module</a>
+    <ul>
+      <li><a href="#subprocessrun">subprocess.run()</a></li>
+      <li><a href="#subprocesspopen">subprocess.Popen()</a></li>
+    </ul>
+  </li>
+</ul>
+:ET

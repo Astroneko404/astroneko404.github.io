@@ -44,7 +44,8 @@ Besides, there are more definitions:
         * If it's already in the priority queue and the new reachability distance is smaller, update the reachability distance of the neighbor point;
     * After iterating all unprocessed neighbor points, iterate through the priority queue, mark each point as processed, put it in the ordered list and update its neighbor points' reachability distance
 3. For each point *p* in the ordered list, denote its reachability distance as `r_p` and its core distance as `c_p`:
-```
+
+{% highlight plaintext %}
 If r_p > Eps or not r_p:
     if c_p <= Eps and c_p:
         // p is a new cluster
@@ -52,10 +53,12 @@ If r_p > Eps or not r_p:
         // p is an outlier
 else:
     // p belongs to current cluster
-```
+{% endhighlight %}
 
 Below is a pseudocode of step 2 from Wikipedia:
-```
+
+
+{% highlight plaintext %}
 function OPTICS(DB, eps, MinPts) is
     for each point p of DB do
         p.reachability-distance = UNDEFINED
@@ -85,7 +88,7 @@ function update(N, p, Seeds, eps, MinPts) is
                 if new-reach-dist < o.reachability-distance then
                     o.reachability-distance = new-reach-dist
                     Seeds.move-up(o, new-reach-dist)
-```
+{% endhighlight %}
 
 ##### OPTICS vs DBSCAN
 * DBSCAN is sensitive on radius since Eps is fixed, which means it could be difficult to handle unbalanced density;

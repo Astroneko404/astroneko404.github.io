@@ -1,0 +1,32 @@
+I"2<p>According to the SoX official documentation, a SoX command line looks like below:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sox [gopts] [[fopts] infile]... [fopts] outfile [effect [effopt]]...
+</code></pre></div></div>
+
+<p>Usually we could simply write a batch script file to iterate and process specific files:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@echo off
+
+set /p path=Where is the folder:
+cd /d "%path%"
+if not exist result mkdir result
+for %%f in ("%cd%"\*) do (
+    sox --norm=-3 "%%~nxf" "result\%%~nxf"
+)
+
+@echo Process finished.
+pause
+</code></pre></div></div>
+
+<p>However, if we would like to expand our Python pipeline, like combining SoX preprocessing with Unreal Engine Editor scripts (or other scripts), it is possible to write Python scripts to control SoX.</p>
+
+<h2 id="introduction-to-pythons-subprocess-module">Introduction to Python’s Subprocess Module</h2>
+<p>According to the official Python document, the subprocess module allows users to:</p>
+
+<p>(1) spawn new processes, <br />
+(2) connect to their input/output/error pipes, and <br />
+(3) obtain their return codes.</p>
+
+<h3 id="subprocessrun">subprocess.run()</h3>
+
+<h3 id="subprocesspopen">subprocess.Popen()</h3>
+
+:ET

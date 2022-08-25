@@ -5,6 +5,7 @@ url: "https://astroneko404.github.io/"
 baseurl: ""
 permalink: /:title/
 description: ""
+highlighter: rouge
 markdown: kramdown
 webrick:
   headers:

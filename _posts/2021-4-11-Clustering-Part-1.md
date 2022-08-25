@@ -29,9 +29,10 @@ Similarly, `i` refers to the row and `k` the column of the associated matrix.
 
 ##### Criteria
 The criteria score equals the sum of responsibility and availability:
-```
+
+{% highlight plaintext %}
 c(i, k) = r(i, k) + a(i, k)
-```
+{% endhighlight %}
 
 Rows that share the same exemplar are in the same cluster.
 
@@ -66,9 +67,10 @@ A Clustering Feature (CF) is defined as a triplet `(N, LS, SS)`, where
 For example, assume there are 5 data points (3, 4), (2, 6), (4, 5), (4, 7), (3, 8), then the corresponding CF equals (5, (16, 30), (54, 190))
 
 When adding two CFs, say `CF1 = (N1, LS1, SS1)` and `CF2 = (N2, LS2, SS2)`, the sum is
-```
+
+{% highlight plaintext %}
 CF1 + CF2 = (N1 + N2, LS1 + LS2, SS1 + SS2)
-```
+{% endhighlight %}
 
 ##### Phase 1: Building a CF Tree
 Before introduce how to build a CF Tree,  there are some key concepts:

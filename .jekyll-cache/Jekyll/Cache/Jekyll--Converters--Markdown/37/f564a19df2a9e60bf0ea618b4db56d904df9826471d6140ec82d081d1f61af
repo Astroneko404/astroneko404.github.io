@@ -1,0 +1,124 @@
+I"s1<h2 id="mean-shift">Mean Shift</h2>
+
+<h5 id="steps">Steps</h5>
+<ol>
+  <li>Randomly pick up a data point as centroid.</li>
+  <li>Calculate the Euclidean distance between the centroid and other data points.
+    <ul>
+      <li>If the distance is less than the bandwidth, add the data point to the cluster <em>c<sub>1</sub></em>.</li>
+    </ul>
+  </li>
+  <li>Calculate the average of all data points within the cluster <em>c<sub>1</sub></em>, and shift the cluster to the average. Update the new centroid.
+    <ul>
+      <li>Repeat until converge.</li>
+    </ul>
+  </li>
+  <li>If <em>c<sub>1</sub></em> is overlapped with <em>c<sub>2</sub></em>, another cluster, only the cluster with more points is preserved.</li>
+  <li>Repeat until all data points are assigned to a cluster.</li>
+</ol>
+
+<h5 id="pros">Pros</h5>
+<ol>
+  <li>Single parameter (bandwidth)</li>
+  <li>Does not assume any prior shape on data clusters</li>
+  <li>Robust to outliers</li>
+</ol>
+
+<h5 id="cons">Cons</h5>
+<ol>
+  <li>Output depends on the bandwidth</li>
+  <li>Time complexity of <em>O(n<sup>2</sup>)</em></li>
+</ol>
+
+<h2 id="optics">OPTICS</h2>
+<p>Similar to DBSCAN, OPTICS has following parameters:</p>
+<ul>
+  <li><strong><em>MinPts</em></strong>: The minimum number of points to form a dense region;</li>
+  <li><strong><em>Eps (Optional)</em></strong>: The maximum distance between two data points to be considered as a cluster.</li>
+</ul>
+
+<p>Besides, there are more definitions:</p>
+<ul>
+  <li><strong><em>Core point</em></strong>: A point p is a core point if at least MinPts points are found within its Eps-neighborhood;</li>
+  <li><strong><em>Core distance</em></strong>: The minimum Eps to make a distinct point a core point;</li>
+  <li><strong><em>Reachability distance</em></strong>: The reachability distance of a core point <em>p</em> with regards to another data point <em>o</em> equals to <em>max(coreDist(p), dist(o, p))</em></li>
+</ul>
+
+<h5 id="steps-1">Steps</h5>
+<ol>
+  <li>Initialize a ordered list for storing the final sorted points;</li>
+  <li>Choose an unprocessed point from the dataset, mark it as processed and put it in the ordered list:
+    <ul>
+      <li>If it’s a core point, then initiate another priority queue and iterate through all its neighbors:</li>
+      <li>For each unprocessed neighbor point, calculate its reachability distance from the core point:
+        <ul>
+          <li>If it’s not in the priority queue, insert the neighbor point with its reachability distance;</li>
+          <li>If it’s already in the priority queue and the new reachability distance is smaller, update the reachability distance of the neighbor point;</li>
+        </ul>
+      </li>
+      <li>After iterating all unprocessed neighbor points, iterate through the priority queue, mark each point as processed, put it in the ordered list and update its neighbor points’ reachability distance</li>
+    </ul>
+  </li>
+  <li>For each point <em>p</em> in the ordered list, denote its reachability distance as <code class="language-plaintext highlighter-rouge">r_p</code> and its core distance as <code class="language-plaintext highlighter-rouge">c_p</code>:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">If</span> <span class="n">r_p</span> <span class="o">&gt;</span> <span class="n">Eps</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">r_p</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">c_p</span> <span class="o">&lt;=</span> <span class="n">Eps</span> <span class="ow">and</span> <span class="n">c_p</span><span class="p">:</span>
+        <span class="o">//</span> <span class="n">p</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">new</span> <span class="n">cluster</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="o">//</span> <span class="n">p</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">outlier</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="o">//</span> <span class="n">p</span> <span class="n">belongs</span> <span class="n">to</span> <span class="n">current</span> <span class="n">cluster</span></code></pre></figure>
+
+<p>Below is a pseudocode of step 2 from Wikipedia:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">OPTICS</span><span class="p">(</span><span class="nx">DB</span><span class="p">,</span> <span class="nx">eps</span><span class="p">,</span> <span class="nx">MinPts</span><span class="p">)</span> <span class="nx">is</span>
+    <span class="k">for</span> <span class="nx">each</span> <span class="nx">point</span> <span class="nx">p</span> <span class="k">of</span> <span class="nx">DB</span> <span class="k">do</span>
+        <span class="nx">p</span><span class="p">.</span><span class="nx">reachability</span><span class="o">-</span><span class="nx">distance</span> <span class="o">=</span> <span class="nx">UNDEFINED</span>
+    <span class="k">for</span> <span class="nx">each</span> <span class="nx">unprocessed</span> <span class="nx">point</span> <span class="nx">p</span> <span class="k">of</span> <span class="nx">DB</span> <span class="k">do</span>
+        <span class="nx">N</span> <span class="o">=</span> <span class="nx">getNeighbors</span><span class="p">(</span><span class="nx">p</span><span class="p">,</span> <span class="nx">eps</span><span class="p">)</span>
+        <span class="nx">mark</span> <span class="nx">p</span> <span class="k">as</span> <span class="nx">processed</span>
+        <span class="nx">output</span> <span class="nx">p</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">ordered</span> <span class="nx">list</span>
+        <span class="k">if</span> <span class="nx">core</span><span class="o">-</span><span class="nx">distance</span><span class="p">(</span><span class="nx">p</span><span class="p">,</span> <span class="nx">eps</span><span class="p">,</span> <span class="nx">MinPts</span><span class="p">)</span> <span class="o">!=</span> <span class="nx">UNDEFINED</span> <span class="nx">then</span>
+            <span class="nx">Seeds</span> <span class="o">=</span> <span class="nx">empty</span> <span class="nx">priority</span> <span class="nx">queue</span>
+            <span class="nx">update</span><span class="p">(</span><span class="nx">N</span><span class="p">,</span> <span class="nx">p</span><span class="p">,</span> <span class="nx">Seeds</span><span class="p">,</span> <span class="nx">eps</span><span class="p">,</span> <span class="nx">MinPts</span><span class="p">)</span>
+            <span class="k">for</span> <span class="nx">each</span> <span class="nx">next</span> <span class="nx">q</span> <span class="k">in</span> <span class="nx">Seeds</span> <span class="k">do</span>
+                <span class="nx">N</span><span class="dl">'</span><span class="s1"> = getNeighbors(q, eps)
+                mark q as processed
+                output q to the ordered list
+                if core-distance(q, eps, MinPts) != UNDEFINED do
+                    update(N</span><span class="dl">'</span><span class="p">,</span> <span class="nx">q</span><span class="p">,</span> <span class="nx">Seeds</span><span class="p">,</span> <span class="nx">eps</span><span class="p">,</span> <span class="nx">MinPts</span><span class="p">)</span>
+
+<span class="kd">function</span> <span class="nx">update</span><span class="p">(</span><span class="nx">N</span><span class="p">,</span> <span class="nx">p</span><span class="p">,</span> <span class="nx">Seeds</span><span class="p">,</span> <span class="nx">eps</span><span class="p">,</span> <span class="nx">MinPts</span><span class="p">)</span> <span class="nx">is</span>
+    <span class="nx">coredist</span> <span class="o">=</span> <span class="nx">core</span><span class="o">-</span><span class="nx">distance</span><span class="p">(</span><span class="nx">p</span><span class="p">,</span> <span class="nx">eps</span><span class="p">,</span> <span class="nx">MinPts</span><span class="p">)</span>
+    <span class="k">for</span> <span class="nx">each</span> <span class="nx">o</span> <span class="k">in</span> <span class="nx">N</span>
+        <span class="k">if</span> <span class="nx">o</span> <span class="nx">is</span> <span class="nx">not</span> <span class="nx">processed</span> <span class="nx">then</span>
+            <span class="k">new</span><span class="o">-</span><span class="nx">reach</span><span class="o">-</span><span class="nx">dist</span> <span class="o">=</span> <span class="nx">max</span><span class="p">(</span><span class="nx">coredist</span><span class="p">,</span> <span class="nx">dist</span><span class="p">(</span><span class="nx">p</span><span class="p">,</span><span class="nx">o</span><span class="p">))</span>
+            <span class="k">if</span> <span class="nx">o</span><span class="p">.</span><span class="nx">reachability</span><span class="o">-</span><span class="nx">distance</span> <span class="o">==</span> <span class="nx">UNDEFINED</span> <span class="nx">then</span> <span class="c1">// o is not in Seeds</span>
+                <span class="nx">o</span><span class="p">.</span><span class="nx">reachability</span><span class="o">-</span><span class="nx">distance</span> <span class="o">=</span> <span class="k">new</span><span class="o">-</span><span class="nx">reach</span><span class="o">-</span><span class="nx">dist</span>
+                <span class="nx">Seeds</span><span class="p">.</span><span class="nx">insert</span><span class="p">(</span><span class="nx">o</span><span class="p">,</span> <span class="k">new</span><span class="o">-</span><span class="nx">reach</span><span class="o">-</span><span class="nx">dist</span><span class="p">)</span>
+            <span class="k">else</span>               <span class="c1">// o in Seeds, check for improvement</span>
+                <span class="k">if</span> <span class="k">new</span><span class="o">-</span><span class="nx">reach</span><span class="o">-</span><span class="nx">dist</span> <span class="o">&lt;</span> <span class="nx">o</span><span class="p">.</span><span class="nx">reachability</span><span class="o">-</span><span class="nx">distance</span> <span class="nx">then</span>
+                    <span class="nx">o</span><span class="p">.</span><span class="nx">reachability</span><span class="o">-</span><span class="nx">distance</span> <span class="o">=</span> <span class="k">new</span><span class="o">-</span><span class="nx">reach</span><span class="o">-</span><span class="nx">dist</span>
+                    <span class="nx">Seeds</span><span class="p">.</span><span class="nx">move</span><span class="o">-</span><span class="nx">up</span><span class="p">(</span><span class="nx">o</span><span class="p">,</span> <span class="k">new</span><span class="o">-</span><span class="nx">reach</span><span class="o">-</span><span class="nx">dist</span><span class="p">)</span></code></pre></figure>
+
+<h5 id="optics-vs-dbscan">OPTICS vs DBSCAN</h5>
+<ul>
+  <li>DBSCAN is sensitive on radius since Eps is fixed, which means it could be difficult to handle unbalanced density;</li>
+  <li>OPTICS costs more on memory due to its usage of priority queue.</li>
+</ul>
+
+<!--## Spectral Clustering-->
+<h2 id="references">References</h2>
+<ul>
+  <li><a href="https://medium.com/@darkprogrammerpb/mean-shift-clustering-algorithm-from-scratch-477499caaa10" target="_blank">Mean shift Clustering algorithm from scratch</a></li>
+  <li><a href="https://blog.csdn.net/hjimce/article/details/45718593" target="_blank">机器学习（十）Mean Shift 聚类算法</a></li>
+  <li><a href="http://vision.stanford.edu/teaching/cs131_fall1617/lectures/lecture13_kmeans_mean_shift_cs131_2016" target="_blank">Lecture 13: k-means and mean-shift clustering</a></li>
+  <li><a href="https://ml-explained.com/blog/mean-shift-explained" target="_blank">Mean Shift</a></li>
+  <li><a href="https://towardsdatascience.com/clustering-using-optics-cac1d10ed7a7" target="_blank">Clustering Using OPTICS</a></li>
+  <li><a href="https://xzz201920.medium.com/optics-d80b41fd042a" target="_blank">OPTICS (Ordering points to identify the clustering structure)</a></li>
+  <li><a href="https://blog.csdn.net/xuanyuansen/article/details/49471807" target="_blank">OPTICS聚类算法原理</a></li>
+  <li><a href="https://blog.csdn.net/itplus/article/details/10089323" target="_blank">聚类算法初探（六）OPTICS</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/OPTICS_algorithm" target="_blank">OPTICS algorithm</a></li>
+</ul>
+:ET

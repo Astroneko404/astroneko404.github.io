@@ -10,14 +10,6 @@ author: "ASTRON"
 encrypted_text: true
 permalink: /
 ---
-```                                                                        
-   ________  ______  __________     __ __
-  / ____/\ \/ / __ )/ ____/ __ \   / // /
- / /      \  / __  / __/ / /_/ /  / // /_
-/ /___    / / /_/ / /___/ _, _/  /__  __/
-\____/   /_/_____/_____/_/ |_|     /_/   
-                                                                                                   
-```
 WELCOME, \<USER\>, YOU ARE NOW ACCESSING ASTRON LAGRANGE'S HOMEPAGE
 
 <br/>

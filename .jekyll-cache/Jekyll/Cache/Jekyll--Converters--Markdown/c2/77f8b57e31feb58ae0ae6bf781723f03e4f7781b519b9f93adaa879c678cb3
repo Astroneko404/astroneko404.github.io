@@ -1,0 +1,186 @@
+I"�6<p>Original post: <br />
+<a href="https://gist.github.com/Astroneko404/0a29775a02d79b46f4b36df05634f0fb#file-xcursor-theme-tutorial-v1-1-md">https://gist.github.com/Astroneko404/0a29775a02d79b46f4b36df05634f0fb#file-xcursor-theme-tutorial-v1-1-md</a>
+<br /><br /></p>
+
+<p>======== Updates ========<br />
+– v1.1 The installation steps are modified<br /></p>
+
+<p>Before starting this tutorial, thanks the txt guide from <a href="https://gist.github.com/sole/571812">sole</a> and the video guide from <a href="https://www.youtube.com/watch?v=cH1zij5yM9I&amp;t=157s">MrGondol90</a>. It is my first time to create a xcursor theme and these guides helped me a lot.<br /><br /></p>
+
+<h4 id="1-config-files">1) Config files</h4>
+<p>Suppose that we’ve already finished our design of cursors and saved them as .PNG files, then we need config files to hold their information such as size, frames, etc.
+The format of a config file looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">[size] [x_cordinate_cursor] [y_cordinate_cursor] [path_to_image_file] [refresh_rate_of_cursor]</span></code></pre></figure>
+
+<p>As a result, for a single-frame cursor:</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">32 5 6 image/pointer_1.png 1000</span></code></pre></figure>
+
+<p>and for a multi-frame cursor:</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">32 5 6 image/pointer_1.png 300
+32 5 6 image/pointer_2.png 300
+32 5 6 image/pointer_3.png 300</span></code></pre></figure>
+
+<p>I felt that 300 is good for a cursor that has 2 frames, but you may need a lower value of the refresh rate if your cursor has more frames. After creating config files for your image files, let’s move to the next step.</p>
+
+<h4 id="2-xcursorgen">2) xcursorgen</h4>
+<p>We need to create xcursor files using our config files.<br />
+The command line for generating xcursor files looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">xcursorgen [config_file] [destination_of_xcursor]</span></code></pre></figure>
+
+<p>Example:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">xcursorgen config.in cursors/arrow</code></pre></figure>
+
+<p>“arrow” is just one cursor in the xcursor list. For a list of reference, run this (take DMZ-White as an example):</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd</span> /usr/share/icons/DMZ-White/cursors/
+<span class="nb">ls</span> <span class="nt">-l</span></code></pre></figure>
+
+<p>and here is the result:</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">total 1728
+</span><span class="gp">lrwxrwxrwx 1 root root     14 Aug 27 11:55 00008160000006810000408080010102 -&gt;</span><span class="w"> </span>v_double_arrow
+<span class="gp">lrwxrwxrwx 1 root root     14 Aug 27 11:55 028006030e0e7ebffc7f7070c0600140 -&gt;</span><span class="w"> </span>h_double_arrow
+<span class="gp">lrwxrwxrwx 1 root root     14 Aug 27 11:55 03b6e0fcb3499374a867c041f52298f0 -&gt;</span><span class="w"> </span>crossed_circle
+<span class="gp">lrwxrwxrwx 1 root root     14 Aug 27 11:55 08e8e1c95fe2fc01f976f1e063a24ccd -&gt;</span><span class="w"> </span>left_ptr_watch
+<span class="gp">lrwxrwxrwx 1 root root      4 Aug 27 11:55 1081e37283d90000800003c07f3ef6bf -&gt;</span><span class="w"> </span>copy
+<span class="gp">lrwxrwxrwx 1 root root     17 Aug 27 11:55 14fef782d02440884392942c11205230 -&gt;</span><span class="w"> </span>sb_h_double_arrow
+<span class="gp">lrwxrwxrwx 1 root root     17 Aug 27 11:55 2870a09082c103050810ffdffffe0204 -&gt;</span><span class="w"> </span>sb_v_double_arrow
+<span class="gp">lrwxrwxrwx 1 root root      4 Aug 27 11:55 3085a0e285430894940527032f8b26df -&gt;</span><span class="w"> </span><span class="nb">link</span>
+<span class="gp">lrwxrwxrwx 1 root root     14 Aug 27 11:55 3ecb610c1bf2410f44200f48c40d3599 -&gt;</span><span class="w"> </span>left_ptr_watch
+<span class="gp">lrwxrwxrwx 1 root root      4 Aug 27 11:55 4498f0e0c1937ffe01fd06f973665830 -&gt;</span><span class="w"> </span>move
+<span class="gp">lrwxrwxrwx 1 root root     14 Aug 27 11:55 5c6cd98b3f3ebcb1f9c7f1c204630408 -&gt;</span><span class="w"> </span>question_arrow
+<span class="gp">lrwxrwxrwx 1 root root      4 Aug 27 11:55 6407b0e94181790501fd1e167b474872 -&gt;</span><span class="w"> </span>copy
+<span class="gp">lrwxrwxrwx 1 root root      4 Aug 27 11:55 640fb0e74195791501fd1ed57b41487f -&gt;</span><span class="w"> </span><span class="nb">link</span>
+<span class="gp">lrwxrwxrwx 1 root root      4 Aug 27 11:55 9081237383d90e509aa00f00170e968f -&gt;</span><span class="w"> </span>move
+<span class="gp">lrwxrwxrwx 1 root root      5 Aug 27 11:55 9d800788f1b08800ae810202380a0822 -&gt;</span><span class="w"> </span>hand2
+<span class="gp">lrwxrwxrwx 1 root root      8 Aug 27 11:55 arrow -&gt;</span><span class="w"> </span>left_ptr
+<span class="go">-rw-r--r-- 1 root root  15776 Dec 24  2017 bd_double_arrow
+-rw-r--r-- 1 root root  15776 Dec 24  2017 bottom_left_corner
+-rw-r--r-- 1 root root  15776 Dec 24  2017 bottom_right_corner
+-rw-r--r-- 1 root root  15776 Dec 24  2017 bottom_side
+-rw-r--r-- 1 root root  15776 Dec 24  2017 bottom_tee
+</span><span class="gp">lrwxrwxrwx 1 root root     15 Aug 27 11:55 c7088f0f3e6c8088236ef8e1e3e70000 -&gt;</span><span class="w"> </span>bd_double_arrow
+<span class="go">-rw-r--r-- 1 root root  15776 Dec 24  2017 circle
+-rw-r--r-- 1 root root  15776 Dec 24  2017 color-picker
+-rw-r--r-- 1 root root  15680 Dec 24  2017 copy
+-rw-r--r-- 1 root root  15776 Dec 24  2017 cross
+-rw-r--r-- 1 root root  15776 Dec 24  2017 crossed_circle
+-rw-r--r-- 1 root root  15776 Dec 24  2017 crosshair
+</span><span class="gp">lrwxrwxrwx 1 root root      5 Aug 27 11:55 cross_reverse -&gt;</span><span class="w"> </span>cross
+<span class="gp">lrwxrwxrwx 1 root root     14 Aug 27 11:55 d9ce0ab605698f320427677b458ad60b -&gt;</span><span class="w"> </span>question_arrow
+<span class="gp">lrwxrwxrwx 1 root root      5 Aug 27 11:55 diamond_cross -&gt;</span><span class="w"> </span>cross
+<span class="go">-rw-r--r-- 1 root root  15776 Dec 24  2017 dnd-ask
+-rw-r--r-- 1 root root  15776 Dec 24  2017 dnd-copy
+-rw-r--r-- 1 root root  15776 Dec 24  2017 dnd-link
+-rw-r--r-- 1 root root  15776 Dec 24  2017 dnd-move
+-rw-r--r-- 1 root root  15776 Dec 24  2017 dnd-none
+-rw-r--r-- 1 root root  15776 Dec 24  2017 dotbox
+</span><span class="gp">lrwxrwxrwx 1 root root      6 Aug 27 11:55 dot_box_mask -&gt;</span><span class="w"> </span>dotbox
+<span class="gp">lrwxrwxrwx 1 root root     17 Aug 27 11:55 double_arrow -&gt;</span><span class="w"> </span>sb_v_double_arrow
+<span class="gp">lrwxrwxrwx 1 root root      9 Aug 27 11:55 draft_large -&gt;</span><span class="w"> </span>right_ptr
+<span class="gp">lrwxrwxrwx 1 root root      9 Aug 27 11:55 draft_small -&gt;</span><span class="w"> </span>right_ptr
+<span class="gp">lrwxrwxrwx 1 root root      6 Aug 27 11:55 draped_box -&gt;</span><span class="w"> </span>dotbox
+<span class="gp">lrwxrwxrwx 1 root root      5 Aug 27 11:55 e29285e634086352946a0e7090d73106 -&gt;</span><span class="w"> </span>hand2
+<span class="gp">lrwxrwxrwx 1 root root     15 Aug 27 11:55 fcf1c3c7cd4491d801f1e1c78f100000 -&gt;</span><span class="w"> </span>fd_double_arrow
+<span class="go">-rw-r--r-- 1 root root  15776 Dec 24  2017 fd_double_arrow
+</span><span class="gp">lrwxrwxrwx 1 root root      8 Aug 27 11:55 fleur -&gt;</span><span class="w"> </span>grabbing
+<span class="go">-rw-r--r-- 1 root root  15776 Dec 24  2017 grabbing
+</span><span class="gp">lrwxrwxrwx 1 root root      5 Aug 27 11:55 hand -&gt;</span><span class="w"> </span>hand2
+<span class="gp">lrwxrwxrwx 1 root root      5 Aug 27 11:55 hand1 -&gt;</span><span class="w"> </span>hand2
+<span class="go">-rw-r--r-- 1 root root  15776 Dec 24  2017 hand2
+</span><span class="gp">lrwxrwxrwx 1 root root     17 Aug 27 11:55 h_double_arrow -&gt;</span><span class="w"> </span>sb_h_double_arrow
+<span class="gp">lrwxrwxrwx 1 root root     14 Aug 27 11:55 help -&gt;</span><span class="w"> </span>question_arrow
+<span class="gp">lrwxrwxrwx 1 root root      6 Aug 27 11:55 icon -&gt;</span><span class="w"> </span>dotbox
+<span class="go">-rw-r--r-- 1 root root  15776 Dec 24  2017 left_ptr
+</span><span class="gp">lrwxrwxrwx 1 root root     14 Aug 27 11:55 left_ptr_help -&gt;</span><span class="w"> </span>question_arrow
+<span class="go">-rw-r--r-- 1 root root 488576 Dec 24  2017 left_ptr_watch
+-rw-r--r-- 1 root root  15776 Dec 24  2017 left_side
+-rw-r--r-- 1 root root  15776 Dec 24  2017 left_tee
+-rw-r--r-- 1 root root  15776 Dec 24  2017 link
+-rw-r--r-- 1 root root  15776 Dec 24  2017 ll_angle
+-rw-r--r-- 1 root root  15776 Dec 24  2017 lr_angle
+-rw-r--r-- 1 root root  15776 Dec 24  2017 move
+-rw-r--r-- 1 root root  15776 Dec 24  2017 pencil
+</span><span class="gp">lrwxrwxrwx 1 root root      8 Aug 27 11:55 pirate -&gt;</span><span class="w"> </span>X_cursor
+<span class="go">-rw-r--r-- 1 root root  15776 Dec 24  2017 plus
+-rw-r--r-- 1 root root  15776 Dec 24  2017 question_arrow
+-rw-r--r-- 1 root root  15776 Dec 24  2017 right_ptr
+-rw-r--r-- 1 root root  15776 Dec 24  2017 right_side
+-rw-r--r-- 1 root root  15776 Dec 24  2017 right_tee
+-rw-r--r-- 1 root root  15776 Dec 24  2017 sb_down_arrow
+-rw-r--r-- 1 root root  15776 Dec 24  2017 sb_h_double_arrow
+-rw-r--r-- 1 root root  15776 Dec 24  2017 sb_left_arrow
+-rw-r--r-- 1 root root  15776 Dec 24  2017 sb_right_arrow
+-rw-r--r-- 1 root root  15776 Dec 24  2017 sb_up_arrow
+-rw-r--r-- 1 root root  15776 Dec 24  2017 sb_v_double_arrow
+</span><span class="gp">lrwxrwxrwx 1 root root      6 Aug 27 11:55 target -&gt;</span><span class="w"> </span>dotbox
+<span class="go">-rw-r--r-- 1 root root  15776 Dec 24  2017 tcross
+</span><span class="gp">lrwxrwxrwx 1 root root      8 Aug 27 11:55 top_left_arrow -&gt;</span><span class="w"> </span>left_ptr
+<span class="go">-rw-r--r-- 1 root root  15680 Dec 24  2017 top_left_corner
+-rw-r--r-- 1 root root  15776 Dec 24  2017 top_right_corner
+-rw-r--r-- 1 root root  15776 Dec 24  2017 top_side
+-rw-r--r-- 1 root root  15776 Dec 24  2017 top_tee
+-rw-r--r-- 1 root root  15776 Dec 24  2017 ul_angle
+-rw-r--r-- 1 root root  15776 Dec 24  2017 ur_angle
+</span><span class="gp">lrwxrwxrwx 1 root root     17 Aug 27 11:55 v_double_arrow -&gt;</span><span class="w"> </span>sb_v_double_arrow
+<span class="go">-rw-r--r-- 1 root root 488576 Dec 24  2017 watch
+-rw-r--r-- 1 root root  15776 Dec 24  2017 X_cursor
+-rw-r--r-- 1 root root  15776 Dec 24  2017 xterm</span></code></pre></figure>
+
+<p>Since there are lots of files, I recommend using shell scripts to generate xcursor files.<br />
+Notice that some cursor files have a hash name, like <code class="language-plaintext highlighter-rouge">9081237383d90e509aa00f00170e968f</code>.
+This is because that some programs may have their custom cursors.
+In order to let our cursor theme work in these programs, we also need to create xcursor files for them.<br />
+For example:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">xcursorgen config.in cursors/move
+xcursorgen config.in cursors/9081237383d90e509aa00f00170e968f</code></pre></figure>
+
+<p><code class="language-plaintext highlighter-rouge">9081237383d90e509aa00f00170e968f</code> has the same function as <code class="language-plaintext highlighter-rouge">move</code>, so we use the same config file on both of them.<br /><br />
+For more information, this site might be helpful:<br />
+https://wiki.archlinux.org/index.php/Cursor_themes#Troubleshooting</p>
+
+<h4 id="3-indextheme">3) index.theme</h4>
+<p>In the main folder of our theme, create a file named <code class="language-plaintext highlighter-rouge">index.theme</code>.<br />
+The folder structure should look like this:</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">my_theme
+  |
+  --- config
+  |
+  --- cursors
+  |
+  --- images
+  |
+  --- index.theme</span></code></pre></figure>
+
+<p>Inside <code class="language-plaintext highlighter-rouge">index.theme</code>, add following lines:</p>
+
+<figure class="highlight"><pre><code class="language-conf" data-lang="conf">[<span class="n">Cursor</span> <span class="n">Theme</span>]
+<span class="n">Name</span>=<span class="n">my_theme</span>
+<span class="n">Comment</span>=</code></pre></figure>
+
+<h4 id="4-testing">4) Testing</h4>
+<p>To test that if the cursor theme works, use this site:<br />
+http://elektronotdienst-nuernberg.de/bugs/cursor.html</p>
+
+<h4 id="5-install">5) Install</h4>
+<p>Notes: Some tweak tools such as GNOME Tweaks might be useful.<br /></p>
+<ol>
+  <li>Install GNOME Tweaks either from command line or Ubuntu Software</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">sudo </span>add-apt-repository universe
+<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>gnome-tweak-tool</code></pre></figure>
+
+<ol>
+  <li>Copy the whole folder of our theme in <code class="language-plaintext highlighter-rouge">~/.icons</code>. If there is no such a folder, we could create one using <code class="language-plaintext highlighter-rouge">mkdir</code> or install another theme using <code class="language-plaintext highlighter-rouge">apt-get</code>.</li>
+  <li>[Optional(?)] For user-specific configuration, put the <code class="language-plaintext highlighter-rouge">index.theme</code> in <code class="language-plaintext highlighter-rouge">~/.icons/default/</code>; for system-wide configuration, put the <code class="language-plaintext highlighter-rouge">index.theme</code> in <code class="language-plaintext highlighter-rouge">/usr/share/icons/default/</code>.</li>
+  <li>Log out and re-login, and the theme could be seen in GNOME Tweaks.</li>
+</ol>
+:ET

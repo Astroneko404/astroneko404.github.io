@@ -17,38 +17,51 @@ Before starting this tutorial, thanks the txt guide from [sole](https://gist.git
 #### 1) Config files
 Suppose that we've already finished our design of cursors and saved them as .PNG files, then we need config files to hold their information such as size, frames, etc.
 The format of a config file looks like this:
-```
+
+{% highlight console %}
 [size] [x_cordinate_cursor] [y_cordinate_cursor] [path_to_image_file] [refresh_rate_of_cursor]
-```
+{% endhighlight %}
+
 As a result, for a single-frame cursor:
-```
+
+{% highlight console %}
 32 5 6 image/pointer_1.png 1000
-```
+{% endhighlight %}
+
 and for a multi-frame cursor:
-```
+
+{% highlight console %}
 32 5 6 image/pointer_1.png 300
 32 5 6 image/pointer_2.png 300
 32 5 6 image/pointer_3.png 300
-```
+{% endhighlight %}
+
 I felt that 300 is good for a cursor that has 2 frames, but you may need a lower value of the refresh rate if your cursor has more frames. After creating config files for your image files, let's move to the next step.
 
 #### 2) xcursorgen
 We need to create xcursor files using our config files.<br/>
 The command line for generating xcursor files looks like this:
-```
+
+{% highlight console %}
 xcursorgen [config_file] [destination_of_xcursor]
-```
+{% endhighlight %}
+
 Example:
-```
+
+{% highlight shell %}
 xcursorgen config.in cursors/arrow
-```
+{% endhighlight %}
+
 "arrow" is just one cursor in the xcursor list. For a list of reference, run this (take DMZ-White as an example):
-```
+
+{% highlight shell %}
 cd /usr/share/icons/DMZ-White/cursors/
 ls -l
-```
+{% endhighlight %}
+
 and here is the result:
-```
+
+{% highlight console %}
 total 1728
 lrwxrwxrwx 1 root root     14 Aug 27 11:55 00008160000006810000408080010102 -> v_double_arrow
 lrwxrwxrwx 1 root root     14 Aug 27 11:55 028006030e0e7ebffc7f7070c0600140 -> h_double_arrow
@@ -138,16 +151,19 @@ lrwxrwxrwx 1 root root     17 Aug 27 11:55 v_double_arrow -> sb_v_double_arrow
 -rw-r--r-- 1 root root 488576 Dec 24  2017 watch
 -rw-r--r-- 1 root root  15776 Dec 24  2017 X_cursor
 -rw-r--r-- 1 root root  15776 Dec 24  2017 xterm
-```
+{% endhighlight %}
+
 Since there are lots of files, I recommend using shell scripts to generate xcursor files.<br/>
 Notice that some cursor files have a hash name, like `9081237383d90e509aa00f00170e968f`.
 This is because that some programs may have their custom cursors.
 In order to let our cursor theme work in these programs, we also need to create xcursor files for them.<br/>
 For example:
-```
+
+{% highlight shell %}
 xcursorgen config.in cursors/move
 xcursorgen config.in cursors/9081237383d90e509aa00f00170e968f
-```
+{% endhighlight %}
+
 `9081237383d90e509aa00f00170e968f` has the same function as `move`, so we use the same config file on both of them.<br/><br/>
 For more information, this site might be helpful:<br/>
 https://wiki.archlinux.org/index.php/Cursor_themes#Troubleshooting
@@ -155,7 +171,8 @@ https://wiki.archlinux.org/index.php/Cursor_themes#Troubleshooting
 #### 3) index.theme
 In the main folder of our theme, create a file named `index.theme`.<br/>
 The folder structure should look like this:
-```
+
+{% highlight console %}
 my_theme
   |
   --- config
@@ -165,13 +182,16 @@ my_theme
   --- images
   |
   --- index.theme
-```
+{% endhighlight %}
+
 Inside `index.theme`, add following lines:
-```
+
+{% highlight conf %}
 [Cursor Theme]
 Name=my_theme
 Comment=
-```
+{% endhighlight %}
+
 #### 4) Testing
 To test that if the cursor theme works, use this site:<br/>
 http://elektronotdienst-nuernberg.de/bugs/cursor.html
@@ -179,10 +199,12 @@ http://elektronotdienst-nuernberg.de/bugs/cursor.html
 #### 5) Install
 Notes: Some tweak tools such as GNOME Tweaks might be useful.<br/>
 1. Install GNOME Tweaks either from command line or Ubuntu Software
-```
+
+{% highlight shell %}
 $ sudo add-apt-repository universe
 $ sudo apt install gnome-tweak-tool
-```
+{% endhighlight %}
+
 2. Copy the whole folder of our theme in `~/.icons`. If there is no such a folder, we could create one using `mkdir` or install another theme using `apt-get`.
 3. \[Optional(?)\] For user-specific configuration, put the `index.theme` in `~/.icons/default/`; for system-wide configuration, put the `index.theme` in `/usr/share/icons/default/`.
 4. Log out and re-login, and the theme could be seen in GNOME Tweaks.

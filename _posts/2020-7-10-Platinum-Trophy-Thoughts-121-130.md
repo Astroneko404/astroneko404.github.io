@@ -8,7 +8,7 @@ date: 2020-7-10
 Original post: <br/>
 [https://forum.psnprofiles.com/topic/81083-astray404s-trophy-shelf/](https://forum.psnprofiles.com/topic/81083-astray404s-trophy-shelf/)
 
-###  #121 - Fate/Extella
+##  #121 - Fate/Extella
 *Difficulty: 3/10*
 
 Had some moods to clear some very-rare plats so I picked this one from my backlog. The very-hard difficulty is actually much easier than I thought with all code casts brought, and those traps can also be countered by pressing the attack button at the right time (although none of the guides mentioned it lol). There is no tier for characters and you can beat the VH difficulty using whoever you like, but I highly recommend Nero if you don't have a preference since some of her stages cannot be played in the free mode and she is easier to use than Altera.
@@ -19,7 +19,7 @@ Had some moods to clear some very-rare plats so I picked this one from my backlo
 
 \+ The counter system is similar to Onimusha's Issen but much easier to trigger. It looks weird in a Musou-type game but better than nothing. You can literally counter every attack including the trap but I still recommend bring some code casts for safety
 
-\+ Side stories are fun to play 
+\+ Side stories are fun to play
 
 \- Sometimes camera angles could be weird
 
@@ -31,7 +31,7 @@ Had some moods to clear some very-rare plats so I picked this one from my backlo
 
 <br/>
 
-### #122 - LEGO Ninjago Movie: The Videogame
+## #122 - LEGO Ninjago Movie: The Videogame
 *Difficulty: 3/10*
 
 100% on all maps took me lots of time even with a video guide. Although there are reports of completion glitches, I've never experienced in this game. Maybe the devs have already fixed them?
@@ -48,7 +48,7 @@ Had some moods to clear some very-rare plats so I picked this one from my backlo
 
 <br/>
 
-### #123 - VA-11 Hall-A
+## #123 - VA-11 Hall-A
 *Difficulty: 2/10*
 
 As a visual novel, it is fantastic, although I did expect more lol
@@ -67,7 +67,7 @@ Maybe I need to become more weeboo to enjoy this game more?
 
 <br/>
 
-### #124 - Final Fantasy VIII
+## #124 - Final Fantasy VIII
 *Difficulty: 3/10 (With booster)*
 
 A revolutionary one compared to previous FF games. There are lots of changes in the system so I spent almost 8 hrs (Disc 1) just to figure out what Magic Junction is, but anyway it's an awesome game.
@@ -90,7 +90,7 @@ A revolutionary one compared to previous FF games. There are lots of changes in 
 
 <br/>
 
-### #125 - MediEvil
+## #125 - MediEvil
 *Difficulty: 3/10*
 
 A fantastic combination of retro gameplay with modern graphics, although it may need more polishing.
@@ -111,7 +111,7 @@ A fantastic combination of retro gameplay with modern graphics, although it may 
 
 <br/>
 
-### #126 - Star Wars Jedi: Fallen Order
+## #126 - Star Wars Jedi: Fallen Order
 *Difficulty: 3/10*
 
 My friend recommended me this several months ago, saying that its system is similar to Dark Souls (and Bloodborne). However, after I got the plat of this game, my verdict is, that this game is just a horrible rip off of DS. It "inherited" most of the bad aspects from DS, but none of the good features from DS are implemented in this game.
@@ -132,7 +132,7 @@ My friend recommended me this several months ago, saying that its system is simi
 
 <br/>
 
-### #127 New Sakura Wars
+## #127 New Sakura Wars
 *Difficulty: 4/10*
 
 A nostalgic reboot/sequel of Sakura Taisen series. It's good to see old characters, robots and listen to old BGMs.
@@ -153,7 +153,7 @@ A nostalgic reboot/sequel of Sakura Taisen series. It's good to see old characte
 
 <br/>
 
-### #128 - Valkyrie Drive: Bhikkhuni
+## #128 - Valkyrie Drive: Bhikkhuni
 *Difficulty: 5/10*
 
 It is a mediocre game with some fan services, but those trophies are the most nasty ones I have ever seen: not hard but grindy as hell
@@ -162,13 +162,13 @@ It is a mediocre game with some fan services, but those trophies are the most na
 
 \+ Fan service
 
-\- Glitches including: (1) Enemies will randomly disappear upon drive used (2) Defeat the final boss but the clear will not appear (3) Objects sometimes are placed in weird location (e.g. The grass backdoor) 
+\- Glitches including: (1) Enemies will randomly disappear upon drive used (2) Defeat the final boss but the clear will not appear (3) Objects sometimes are placed in weird location (e.g. The grass backdoor)
 
 \- Stupid grindy trophies. 100 naked body, all lingerie and 5M exp are horrible, especially when other trophies only took me around 30 hrs but the platinum took around 65 hrs
 
 \- The 1.00 version (JP) is almost unplayable due to the insane stages in the challenge mode
 
-### #129 - Gundam Breaker 3
+## #129 - Gundam Breaker 3
 *Difficulty: 2/10*
 
 
@@ -190,7 +190,7 @@ Trophy list is pretty self-explaining: beat the game 3 times in different diffic
 
 <br/>
 
-### #130 - Psycho-Pass: Mandatory Happiness
+## #130 - Psycho-Pass: Mandatory Happiness
 *Difficulty: 4/10*
 
-I am not going to comment on the story part because I really skipped a lot. (Guess I might have reading disorder and cannot handle games with too many texts) For me the 2048-minigame is the most relaxing part, challenging but fun, although lots of grinds on points to buy those voices and illustrations, even with backup saves 
+I am not going to comment on the story part because I really skipped a lot. (Guess I might have reading disorder and cannot handle games with too many texts) For me the 2048-minigame is the most relaxing part, challenging but fun, although lots of grinds on points to buy those voices and illustrations, even with backup saves
