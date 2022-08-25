@@ -5,29 +5,12 @@ toc: false
 home_btn: true
 btn_text: true
 footer: true
-title: "ASTRON LAGRANGE'S HOMEPAGE"
+title: "ABOUT | ASTRON LAGRANGE'S HOMEPAGE"
 author: "ASTRON"
 encrypted_text: true
-permalink: /
+permalink: /about
 ---
 
-
-WELCOME, \<USER\>, YOU ARE NOW ACCESSING ASTRON LAGRANGE'S HOMEPAGE
-<br />
-
-```
-
-
-
-
-
-
-
-
-
-
-
-```
 ASTRON LAGRANGE, THE OWNER OF THIS HOMEPAGE, IS
 
 `*` AN ENTHUSIAST OF VIDEO GAME, VGM & RETRO ART<br/>
@@ -37,5 +20,4 @@ ASTRON LAGRANGE, THE OWNER OF THIS HOMEPAGE, IS
 <br/>
 <a href="https://psnprofiles.com/Astray404" target="_blank">
 <img src="https://card.psnprofiles.com/2/Astray404.png" /></a>
-&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../assets/img/tffac_profile.jpg" width="35%"/>

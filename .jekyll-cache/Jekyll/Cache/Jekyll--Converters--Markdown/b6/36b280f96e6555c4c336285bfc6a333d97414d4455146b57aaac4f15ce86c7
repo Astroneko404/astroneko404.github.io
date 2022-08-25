@@ -1,4 +1,0 @@
-I"<p>According to the SoX official documentation, a SoX command line looks like below:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sox [gopts] [[fopts] infile]... [fopts] outfile [effect [effopt]]...
-</code></pre></div></div>
-:ET

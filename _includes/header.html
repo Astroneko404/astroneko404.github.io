@@ -4,16 +4,6 @@
             <!-- left header -->
             <li
                 class="li_left">
-                <!-- home -->
-                {% if page.home_btn != false %}
-                    <a class="header_btn" href="{{ assets_base_url }}{{ site.baseurl }}">
-                        <i class="fa fa-home">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">HOME</p>
-                            {% endif %}
-                        </i>
-                    </a>
-                {% endif %}
                 <!-- github -->
                 {% if site.github != "" %}
                     <a class="header_btn" href="https://github.com/{{ site.github }}" target="_blank">
@@ -55,7 +45,7 @@
                     </a>
                 {% endif %}
                 <!-- maximize -->
-                {% if page.maximize != false %}
+                <!-- {% if page.maximize != false %}
                     <a class="header_btn" id="mxmz_btn" onclick="toggle_maximize()">
                         <i class="fa fa-window-maximize">
                             {% if page.btn_text != false %}
@@ -63,11 +53,12 @@
                             {% endif %}
                         </i>
                     </a>
-                {% endif %}
+                {% endif %} -->
             </li>
             <!-- right header -->
             <span
                 class="span_right">
+
                 <!-- popup table of content -->
                 {% if page.toc != false %}
                     <a class="header_btn" onclick="scroll_percentage(-0.88)">
@@ -94,6 +85,14 @@
                         </i>
                     </a>
                 {% endif %}
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- home -->
+                {% if page.home_btn != false %}
+                    * <a href="{{ assets_base_url }}{{ site.baseurl }}">HOME</a>
+                {% endif %}
+                * <a href="{{ assets_base_url }}{{ site.baseurl }}/gaming.html">GAMING</a>
+                * <a href="{{ assets_base_url }}{{ site.baseurl }}/music.html">MUSIC</a>
+                * <a href="{{ assets_base_url }}{{ site.baseurl }}/mcs.html">CS & MATH</a>
             </span>
         </ul>
     </nav>
