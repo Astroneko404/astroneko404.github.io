@@ -4,46 +4,13 @@
             <!-- left header -->
             <li
                 class="li_left">
-                <!-- github -->
-                {% if site.github != "" %}
-                    <a class="header_btn" href="https://github.com/{{ site.github }}" target="_blank">
-                        <i class="fa fa-github">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">GITHUB</p>
-                            {% endif %}
-                        </i>
-                    </a>
+                <!-- home -->
+                {% if page.home_btn != false %}
+                    * <a href="{{ assets_base_url }}{{ site.baseurl }}">HOME</a>
                 {% endif %}
-                <!-- twitter -->
-                {% if site.twitter != "" %}
-                    <a class="header_btn" href="https://twitter.com/astroneko404" target="_blank">
-                        <i class="fa fa-twitter">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">TWITTER</p>
-                            {% endif %}
-                        </i>
-                    </a>
-                {% endif %}
-                <!-- youtube -->
-                {% if site.youtube != "" %}
-                    <a class="header_btn" href="https://www.youtube.com/c/AstronLagrange" target="_blank">
-                        <i class="fa fa-youtube">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">YOUTUBE</p>
-                            {% endif %}
-                        </i>
-                    </a>
-                {% endif %}
-                <!-- soundcloud -->
-                {% if site.youtube != "" %}
-                    <a class="header_btn" href="https://soundcloud.com/astron_lagrange" target="_blank">
-                        <i class="fa fa-soundcloud">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">SOUNDCLOUD</p>
-                            {% endif %}
-                        </i>
-                    </a>
-                {% endif %}
+                * <a href="{{ assets_base_url }}{{ site.baseurl }}/gaming.html">GAMING</a>
+                * <a href="{{ assets_base_url }}{{ site.baseurl }}/music.html">MUSIC</a>
+                * <a href="{{ assets_base_url }}{{ site.baseurl }}/mcs.html">CS & MATH</a>
                 <!-- maximize -->
                 <!-- {% if page.maximize != false %}
                     <a class="header_btn" id="mxmz_btn" onclick="toggle_maximize()">
@@ -86,13 +53,7 @@
                     </a>
                 {% endif %}
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <!-- home -->
-                {% if page.home_btn != false %}
-                    * <a href="{{ assets_base_url }}{{ site.baseurl }}">HOME</a>
-                {% endif %}
-                * <a href="{{ assets_base_url }}{{ site.baseurl }}/gaming.html">GAMING</a>
-                * <a href="{{ assets_base_url }}{{ site.baseurl }}/music.html">MUSIC</a>
-                * <a href="{{ assets_base_url }}{{ site.baseurl }}/mcs.html">CS & MATH</a>
+
             </span>
         </ul>
     </nav>

@@ -1,17 +1,4 @@
----
-layout: default
-post_list: "date"
-toc: false
-home_btn: true
-btn_text: true
-footer: true
-title: "ASTRON LAGRANGE'S HOMEPAGE"
-author: "ASTRON"
-encrypted_text: true
-permalink: /
----
-
-```
+I"<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
 
 
@@ -22,8 +9,7 @@ permalink: /
 
 
 
-
-```
+</code></pre></div></div>
 <p align="left">
 WELCOME, &lsaquo;USER&rsaquo;
 <br />
@@ -31,20 +17,20 @@ WELCOME, &lsaquo;USER&rsaquo;
 ASTRON2L (AKA ASTRON LAGRANGE), THE OWNER OF THIS HOMEPAGE, IS
 <br />
 
-* AN ENTHUSIAST OF VIDEO GAME, VGM & RETRO ART<br/>
-* COMPOSER & AUDIO ENGINEER<br/>
-* FREELANCE RESEARCHER ON DATA SCIENCE / NLP<br/>
+* AN ENTHUSIAST OF VIDEO GAME, VGM &amp; RETRO ART<br />
+* COMPOSER &amp; AUDIO ENGINEER
+* FREELANCE RESEARCHER ON DATA SCIENCE / NLP<br />
 * THE WEATHER CHANNEL LOVER
 </p>
-<br/>
+<p><br /></p>
 
 <center>
 <a href="https://psnprofiles.com/Astray404" target="_blank">
 <img src="https://card.psnprofiles.com/2/Astray404.png" /></a>
-<br/>
-<br/>
+<br />
+<br />
 
-<a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+<a href="https://github.com/Astroneko404" target="_blank"><i class="fa fa-github fa-2x"></i></a>
 &nbsp;
 <a href="https://www.youtube.com/c/AstronLagrange" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
 &nbsp;
@@ -52,3 +38,4 @@ ASTRON2L (AKA ASTRON LAGRANGE), THE OWNER OF THIS HOMEPAGE, IS
 &nbsp;
 <a href="https://twitter.com/astroneko404" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
 </center>
+:ET
