@@ -61,6 +61,17 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
     text-align: left;
     position: absolute;
   }
+  .table-body-cell{
+      // display: table-cell;
+      // padding: 10px;
+      width: 33%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+  .resp-table {
+      display: flex;
+      flex-wrap: wrap;
+  }
   .container {
     overflow: none;
     top: 2%;
@@ -460,5 +471,9 @@ body {
         font-size: 0;
       }
     }
+    .table-body-cell{
+        width: 100%;
+    }
   }
+
 }
