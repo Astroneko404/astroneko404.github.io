@@ -11,7 +11,7 @@ encrypted_text: true
 permalink: /
 ---
 
-```
+<div class="ascii">
 　　　　　　　　　　　.....　－－　.
 　　　　　　　 ..　'　　　　　　　　　 ｀ヽ
 　　　　 　／　　　　 ,　　　　　　　　　 lヽ
@@ -28,7 +28,8 @@ permalink: /
 　 ヽ:::∞::::ゝ´　　　....::o::::l　　　　....σ〇::::σノo:ノ
 　　　∠ο〇::⌒〇ο:つ:;ヽ　　､O:::::::の
 　　　　　　　　~　　　　　　　｀ｰ ゝ
-```
+</div>
+
 <p align="left">
 WELCOME, &lsaquo;USER&rsaquo;
 <br />
