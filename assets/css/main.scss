@@ -16,11 +16,11 @@ $image-background: none;
 }
 @font-face {
     font-family: "Mona";
-    src: local("Mona"), url("https://github.com/Astroneko404/astroneko404.github.io/blob/master/assets/fonts/mona.ttf");
+    src: url("https://github.com/Astroneko404/astroneko404.github.io/blob/master/assets/fonts/mona.ttf");
 }
 @font-face {
     font-family: "Fira Mono";
-    src: local("Fira Mono"), url("https://github.com/Astroneko404/astroneko404.github.io/blob/master/assets/fonts/FiraMono-Regular.ttf");
+    src: url("https://github.com/Astroneko404/astroneko404.github.io/blob/master/assets/fonts/FiraMono-Regular.ttf");
 }
 $font-family:
 "Fira Code",

@@ -1,0 +1,87 @@
+I"S<p>This article is a lecture note for <a href="https://www.youtube.com/watch?v=sckLJpjH5p8&amp;list=PLF8C86C2E163D8E4E&amp;index=17" target="_blank">Lecture - 17 Lossy Image Compression : DCT</a></p>
+
+<h2 id="transformation-process">Transformation Process</h2>
+<p>There are two basic purposes behind the transformation:</p>
+<ul>
+  <li>To obtain de-correlated coefficients</li>
+  <li>Since transformed coefficients have energy compaction capabilities, energy of the signal will be contained by only a few transformed coefficients. We can truncate those coefficients which are not carrying any significant energy</li>
+</ul>
+
+<p><br />
+DCT (Discrete Cosine Transform) has been adopted in the image compression standards and it is widely used in many applications.<br />
+JPEG, the first image compression standard had made use of DCT as the transform.</p>
+
+<p>A transformation should be designed as a reversible transformation.<br />
+Assume that we have our basic signal \(s(n_1, n_2)\), which is the image intensity at the coordinate position \(n_1\) and \(n_2\).<br />
+We would like to transform \(s(n_1, n_2)\) to \(S(k_1, k_2)\), which is the representation of the signal in the transform domain.<br />
+After transformation, quantization and entropy encoding, we will receive S(k1, k2).<br />
+Then we will do the entropy decoding, de-quantization, and invert transformation.<br />
+As a result, we will get back s_hat(n1, n2), not exactly s(n1, n2).<br />
+Besides, if we do not use any quantization, the process of encoding and decoding should not introduce any errors, which means s_hat(n1, n2) = s(n1, n2).<br />
+<br />
+In general, we could denote the transformation as a double summation process:
+https://user-images.githubusercontent.com/33112694/259614642-7fb91251-5604-4b3b-81c4-9aa219974f5a.png
+in which g is the kernel function, and the image size is N1 x N2.
+We call this forward transformation process.</p>
+
+<p>The inverse transformation is written as:
+https://user-images.githubusercontent.com/33112694/259638007-38ed502e-909d-4088-b40f-d260ca65db42.png</p>
+
+<p>So what is the computation complexity of this?
+If N1=N2=N, the order of computation is going to be order of N^2..
+Hence, after the N^2 computation we get one pair of (k1, k2) value.
+However, in the transform domain we are going to have n^2 number of such S(k1, k2) coefficients.
+In general, K1 and K2 are both in [0, N-1].
+Then for each of this nN^2 number of equations we are going to have n^2 number of multiplications.
+Therefore, the order of computation here is going to be n^4.</p>
+
+<p>There are many fast algorithms for computation of these transformations, such as FFT.</p>
+
+<p>As a special case, we could use DFT (Discrete Fourier Transform) as an example.
+We could denote the kernel as:
+https://user-images.githubusercontent.com/33112694/259698548-942c8f84-1779-44c8-9260-6cfd1e31dcb5.png</p>
+
+<p>A transform is separable if g(n1, n2, k1, k2) = g1(n1, k1)g2(n2, k2), and we call it a separable kernel.
+If g1 and g2 are the same function, then we call this as symmetric.</p>
+
+<p>DFT is a typical example of a symmetric and separable kernel.
+Likewise DCT also fulfils similar properties.</p>
+
+<p>The matrix form of the inverse transform could be written as:
+https://user-images.githubusercontent.com/33112694/259908716-25d312c1-a958-4646-af1c-ab848db0d4d9.png
+In this equation, S(k1, k2) is a scalar quantity, and H_{k1, k2} is a matrix that contains all pairs of h(n1, n2, k1, k2).
+Both two matrices are of dimension n by n.
+The H matrix could be written as:
+https://user-images.githubusercontent.com/33112694/259910535-2cd5d0c2-9de6-4fe6-9664-51569f0f1d84.png
+and it is a basis image.
+The basic behind the image transformation is to multiply basis images by its equivalent coefficients and adding them up.</p>
+
+<p>How to Apply the Transformation
+Assume that we have an image of N x N, and we divide it in to n x n blocks.
+Let N=1024, N/n=8.
+There are two reasons that we use small numbers for the size of each block:
+(1) It is easier to make a hardware block of small size and replicating it. Since the image is subdivided into non-overlapping blocks, we can assign n^2 number of processors, and each processor can perform a transformation for a block which is just the size of N/n;
+(2) We will be able to use the correlation that is existing within the block in a much better way, so there is more exploitation of redundancy with smaller size individual blocks compared to a single large mega block.</p>
+
+<p>Although KL transform is said to be an optimal transform, it is not used in practical circuitry, because it is image dependent.</p>
+
+<p>After dividing the image into blocks, we are going to compute the covariance matrix.
+Then we are going to compute the Eigenvalues of the covariance matrix.
+By ordering those Eigenvalues we can check the efficiency.</p>
+
+<p>Discrete Cosine Transform (DCT)
+For DCT, we could write S(k1, k2) like this:
+https://user-images.githubusercontent.com/33112694/259999199-b55213ed-4bfc-4603-856b-3de08b6cc5cd.png
+In this case C(k) is defined as:
+https://user-images.githubusercontent.com/33112694/260000445-13694b0f-7e33-4109-a709-9ec22d3e26a4.png</p>
+
+<p>When both k1 and k2 are equal to 0, according to the formula of DCT, this leads to an average value, so we denote S(0, 0) as the DC coefficient.
+All other coefficients will be referred to as the AC coefficient.
+In terms of the spatial frequency, all the low frequency components are centered around the upper-left corner, and all the high frequency components are around the lower-left corner.
+Hence, we will expect that the maximum energy will be in the upper-left zone.
+To pick up these coefficients, we are going in a zigzag way.
+https://user-images.githubusercontent.com/33112694/260029356-c885b91a-b813-4d07-9f63-28ba0910a721.png</p>
+
+<p>Thus, the overall block diagram will be like this:
+https://user-images.githubusercontent.com/33112694/260033806-11f44b32-01fd-420d-88c9-c60873dab7f0.png</p>
+:ET

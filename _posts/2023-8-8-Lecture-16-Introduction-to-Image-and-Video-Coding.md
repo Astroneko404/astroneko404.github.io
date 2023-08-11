@@ -5,7 +5,7 @@ category: Misc
 date: 2023-8-8
 ---
 
-This article is a leture note for <a href="https://www.youtube.com/watch?v=SnstUsMJ4V4&list=PLF8C86C2E163D8E4E&index=16" target="_blank">Lecture - 16 Introduction to Image and Video Coding</a>
+This article is a lecture note for <a href="https://www.youtube.com/watch?v=SnstUsMJ4V4&list=PLF8C86C2E163D8E4E&index=16" target="_blank">Lecture - 16 Introduction to Image and Video Coding</a>
 
 ## Intro
 In previous lectures we have covered various speech codings:
@@ -15,14 +15,14 @@ In previous lectures we have covered various speech codings:
 
 <br/>
 How does image coding works?<br/>
-We are taking an image as a 2-dimensional array, and the signal is represented as ```s(n1, n2)```, which ```n1```  and ```n2``` are pixel indices.<br/>
+We are taking an image as a 2-dimensional array, and the signal is represented as $$s(n_1, n_2)$$, which $$n_1$$  and $$n_2$$ are pixel indices.<br/>
 Instead of having variability respect to time, image has variability respect to space. <br/>
-```s(n1, n2)``` is the sampled form of the analog 2D waveform.
+$$s(n_1, n_2)$$ is the sampled form of the analog 2D waveform.
 <br/><br/>
 Then how about videos?<br/>
 Video could be taken as a sequence of images, which contains a 3rd dimension: time.<br/>
 It has variability respect to time.<br/>
-We could denote this as ```s(n1, n2, k)```, where ```k```  indicates the frame number.
+We could denote this as $$s(n_1, n_2, k)$$, where $$k$$ indicates the frame number.
 <br/><br/>
 The fundamental bitrate in case of image and video is much higher than that of the speech signal. <br/>
 Therefore, image and video must be compressed to a very significant extent.
@@ -53,7 +53,7 @@ According to Shannon's entropy coding theorem, the minimum attainable bit rate t
 <br/><br/>
 The diagram above is called our encoder, and the decoder will do the exact reversal of this.
 ```
-    ------------------         --------------        -------------------- 
+    ------------------         --------------        --------------------
 --> | Entropy Decoder |  -->  | Dequantizer |  -->  | Invert Transformer |  ->  s(n1, n2)
     ------------------         --------------        --------------------
 ```

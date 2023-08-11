@@ -1,0 +1,122 @@
+---
+title: "Lecture 17 - Lossy Image Compression: DCT【Lecture Notes】"
+layout: post
+category: Misc
+date: 2023-8-11
+---
+
+This article is a lecture note for <a href="https://www.youtube.com/watch?v=sckLJpjH5p8&list=PLF8C86C2E163D8E4E&index=17" target="_blank">Lecture - 17 Lossy Image Compression : DCT</a>
+
+## Transformation Process
+There are two basic purposes behind the transformation:
+- To obtain de-correlated coefficients
+- Since transformed coefficients have energy compaction capabilities, energy of the signal will be contained by only a few transformed coefficients. We can truncate those coefficients which are not carrying any significant energy
+
+DCT (Discrete Cosine Transform) has been adopted in the image compression standards and it is widely used in many applications.<br/>
+JPEG, the first image compression standard had made use of DCT as the transform.<br/>
+<br/>
+A transformation should be designed as a reversible transformation.<br/>
+Assume that we have our basic signal $$s(n_1, n_2)$$, which is the image intensity at the coordinate position $$n_1$$ and $$n_2$$, we would like to transform $$s(n_1, n_2)$$ to $$S(k_1, k_2)$$, which is the representation of the signal in the transform domain.<br/>
+After transformation, quantization and entropy encoding, we will receive $$S(k_1, k_2)$$.<br/>
+Then we will do the entropy decoding, de-quantization, and invert transformation.<br/>
+As a result, we will get back $$\hat{s}(n_1, n_2)$$, not exactly $$s(n_1, n_2)$$.<br/>
+Besides, if we do not use any quantization, the process of encoding and decoding should not introduce any errors, which means $$\hat{s}(n_1, n_2) = s(n_1, n_2)$$.<br/>
+<br/>
+In general, we could denote the transformation as a double summation process:<br/>
+
+$$S(k_1, k_2) = \sum_{n_1=0}^{N_1-1}\sum_{n_2=0}^{N_2-1} s(n_1, n_2) g(n_1, n_2, k_1, k_2)$$,<br/>
+
+in which $$g$$ is the kernel function, and the image size is $$N_1 \times N_2$$.<br/>
+We call this forward transformation process.<br/>
+<br/>
+The inverse transformation is written as:<br/>
+
+$$s(n_1, n_2) = \sum_{k_1=0}^{N_1-1}\sum_{k_2=0}^{N_2-1} S(k_1, k_2) h(n_1, n_2, k_1, k_2)$$<br/>
+
+#### Computation Complexity
+If $$N1=N2=N$$, the order of computation is going to be order of $$N^2$$.<br/>
+Hence, after the $$N^2$$ computation we get one pair of $$(k_1, k_2)$$ value.<br/>
+However, in the transform domain we are going to have $$N^2$$ number of such $$S(k_1, k_2)$$ coefficients.<br/>
+In general, $$K_1$$ and $$K_2$$ are both in $$[0, N-1]$$.<br/>
+Then for each of this $$N^2$$ number of equations we are going to have $$N^2$$ number of multiplications.<br/>
+Therefore, the order of computation here is going to be $$n^4$$.<br/>
+
+#### Properties of Transformations
+There are many fast algorithms for computation of these transformations, such as FFT.<br/>
+<br/>
+As a special case, we could use DFT (Discrete Fourier Transform) as an example.<br/>
+We could denote the kernel as:<br/>
+
+$$\begin{align}
+g(n_1, n_2, k_1, k_2) &= exp(-j\frac{2\pi(n_1k_1+n_2k_2)}{N^2}) \\
+&= exp(-j\frac{2\pi n_1k_1}{N^2})exp(-j\frac{2\pi n_2k_2}{N^2})
+\end{align}$$ <br/>
+<br/>
+A transform is separable if $$g(n_1, n_2, k_1, k_2) = g_1(n_1, k_1) g_2(n_2, k_2)$$, and we call it a separable kernel.<br/>
+If $$g_1$$ and $$g_2$$ are the same function, then we call this as symmetric.<br/>
+<br/>
+DFT is a typical example of a symmetric and separable kernel.<br/>
+Likewise DCT also fulfils similar properties.<br/>
+
+#### Considering in Matrix Form
+The matrix form of the inverse transform could be written as:<br/>
+
+$$S = \sum_{k_1=0}^{N-1}\sum_{k_2=0}^{N-1}S(k_1, k_2)H_{k_1, k_2}$$<br/>
+
+In this equation, $$S(k_1, k_2)$$ is a scalar quantity, and $$H_{k1, k2}$$ is a matrix that contains all pairs of $$h(n_1, n_2, k_1, k_2)$$.<br/>
+Both two matrices are of dimension $$n \times n$$.<br/>
+The $$H$$ matrix could be written as:<br/>
+
+$$\begin{align}
+H_{k_1, k_2} =
+\begin{bmatrix}
+h(0, 0, k_1, k_2) & h(0, 1, k_1, k_2) & \dots & h(0, N-1, k_1, k_2) \\
+h(1, 0, k_1, k_2) & & & \vdots \\
+\vdots & & & \vdots \\
+h(N-1, 0, k_1, k_2) & \dots & \dots & h(N-1, N-1, k_1, k_2)
+\end{bmatrix}
+\end{align}$$ <br/>
+
+and it is a basis image.<br/>
+The basic behind the image transformation is to multiply basis images by its equivalent coefficients and adding them up.<br/>
+
+## How to Apply the Transformation
+Assume that we have an image of $$N \times N$$, and we divide it in to $$n \times n$$ blocks.<br/>
+Let $$N=1024$$, $$N/n=8$$.<br/>
+There are two reasons that we use small numbers for the size of each block:<br/>
+(1) It is easier to make a hardware block of small size and replicating it. Since the image is subdivided into non-overlapping blocks, we can assign $$n^2$$ number of processors, and each processor can perform a transformation for a block which is just the size of $$N/n$$;<br/>
+(2) We will be able to use the correlation that is existing within the block in a much better way, so there is more exploitation of redundancy with smaller size individual blocks compared to a single large mega block.<br/>
+<br/>
+Although KL transform is said to be an optimal transform, it is not used in practical circuitry, because it is image dependent.<br/>
+<br/>
+After dividing the image into blocks, we are going to compute the covariance matrix.<br/>
+Then we are going to compute the Eigenvalues of the covariance matrix.<br/>
+By ordering those Eigenvalues we can check the efficiency.<br/>
+
+## Discrete Cosine Transform (DCT)
+For DCT, we could write S(k1, k2) like this:<br/>
+
+$$\begin{align}
+S(k_1, k_2) &= \sqrt{\frac{4}{N^2}} C(k_1)C(k_2) \sum_{n_1=0}^{N-1} \sum_{n_2=0}^{N-1}s(n_1, n_2) \\
+& \times{cos(\frac{\pi (2n_1+1)k_1}{2N})} \times{cos(\frac{\pi (2n_2+1)k_2}{2N})}
+\end{align}$$
+
+In this case C(k) is defined as:<br/>
+
+$$\begin{align}
+C(k)=
+\begin{cases}
+\frac{1}{\sqrt{2}},& \text{for } k=0 \\
+1, & \text{otherwise}
+\end{cases}
+\end{align}$$<br/>
+
+When both $$k_1$$ and $$k_2$$ are equal to 0, according to the formula of DCT, this leads to an average value, so we denote $$S(0, 0)$$ as the DC coefficient.<br/>
+All other coefficients will be referred to as the AC coefficient.<br/>
+In terms of the spatial frequency, all the low frequency components are centered around the upper-left corner, and all the high frequency components are around the lower-left corner.<br/>
+Hence, we will expect that the maximum energy will be in the upper-left zone.<br/>
+To pick up these coefficients, we are going in a zigzag way.<br/>
+![](https://user-images.githubusercontent.com/33112694/260029356-c885b91a-b813-4d07-9f63-28ba0910a721.png)
+
+Thus, the overall block diagram will be like this:
+![](https://user-images.githubusercontent.com/33112694/260033806-11f44b32-01fd-420d-88c9-c60873dab7f0.png)
