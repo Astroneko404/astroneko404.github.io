@@ -6,6 +6,7 @@
     {{ page.author }}
   </span>
   {% endif %}
+
   <!-- date -->
   {% if page.date %}
   <span>
@@ -13,13 +14,8 @@
     {{ page.date | date: "%b %d, %Y" }}
   </span>
   {% endif %}
-  <!-- category -->
-  {% if page.category %}
-  <span>
-    <i class="fa fa-archive"></i>
-    {{ page.category }}
-  </span>
-  {% endif %}
+  <br/>
+
   <!-- tags -->
   <span>
     <i class="fa fa-tag"></i>
@@ -28,6 +24,14 @@
     <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{tag_name}}</nobr></code></a>
     {% endfor %}
   </span>
+
+  <!-- category -->
+  <!-- {% if page.category %}
+  <span>
+    <i class="fa fa-archive"></i>
+    {{ page.category }}
+  </span>
+  {% endif %} -->
 </div>
 <!-- abstract -->
 <div class="abstract">
