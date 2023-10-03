@@ -43,14 +43,10 @@ ASTRON LAGRANGE (AKA ASTRON2L), THE OWNER OF THIS HOMEPAGE, IS
 * THE WEATHER CHANNEL LOVER
 </p>
 <br/>
-
-<center>
-<a href="https://psnprofiles.com/Astray404" target="_blank">
-<img src="https://card.psnprofiles.com/2/Astray404.png" /></a>
-<br/>
 <br/>
 
 <hr>
+<center>
 <h2> Discography </h2>
 
 <div class="resp-table">

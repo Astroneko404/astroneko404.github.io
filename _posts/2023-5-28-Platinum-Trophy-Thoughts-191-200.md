@@ -1,7 +1,7 @@
 ---
 title: PSN Platinum Trophy Thoughts No.191 - No.200
 layout: post
-category: Game
+tags: Game PlayStation
 date: 2023-5-28
 ---
 
@@ -11,7 +11,7 @@ Original post: <br/>
 ## #191 - STEINS;GATE ELITE
 *Difficulty: 1/10*
 
-Haven't played the original STEINS;GATE yet, but this is more like a Director's Cut Edition of the anime. It's not bad actually, however, although I still need to play the original version on my Vita, since I've heard that there are storywise differences between those two games. 
+Haven't played the original STEINS;GATE yet, but this is more like a Director's Cut Edition of the anime. It's not bad actually, however, although I still need to play the original version on my Vita, since I've heard that there are storywise differences between those two games.
 
 ## #192 - Fate/stay night [Realta Nua]
 *Difficulty: 2/10*
@@ -30,7 +30,7 @@ Back in the 2000s, it was a great visual novel commercially released by Type-Moo
 
 \- Music
 
-## #193 - Wattam 
+## #193 - Wattam
 *Difficulty: 4/10*
 
 What a shitty game... and I'm not joking. (′゜ω。‵)
@@ -50,7 +50,7 @@ The story is not as enjoyable as previous Senran Kagura titles, and it is short.
 
 Basically, it is a good game to kill time, but even so, I highly recommend buying this during a sale.
 
-BTW, the box edition looks nice. 
+BTW, the box edition looks nice.
 
 <center>
 <img src="../assets/img/game/193454273-69380484-f031-463c-b0fb-c88703de7c94.JPG" width="80%">
@@ -65,7 +65,7 @@ Thank TYPE-MOON for bringing everyone back to the golden age of Visual Novels. A
 
 Don't get deceived by the first playthrough, since Arcueid's route conceals all conspiracies with a "boy-meet-girl" romantic facade. Once getting into Ciel's route during the second playthrough, the distinct "TYPE-MOON" -ish complexity of the story starts to show up. Even bad endings are fun to watch instead of frustrating and punishing readers.
 
-I wish not to spoil the whole story, so my review of the story ends here. If you possess the ability to read in Japanese, I would highly recommend this, and also Tsukihime -The other side of red garden-, which will be released in the future. 
+I wish not to spoil the whole story, so my review of the story ends here. If you possess the ability to read in Japanese, I would highly recommend this, and also Tsukihime -The other side of red garden-, which will be released in the future.
 
 <center>
 <img src="../assets/img/game/191969332-64d3841c-6fb4-48a9-a17e-b8797fd8f23d.jpg" width="80%">
@@ -149,4 +149,3 @@ As the first FF on Super Nintendo, the music, art and story are much better than
 \- Lacking a job system makes the game more story-focused. Sometimes I wish Cecil could switch his job between Dark Knight and Paladin, and the usage of his jobs brings different endings
 
 \- Requiring lots of grindings. I'm not a victim of stupid RNG but I've heard that it might take hours to farm summon magics and the pink tail
-

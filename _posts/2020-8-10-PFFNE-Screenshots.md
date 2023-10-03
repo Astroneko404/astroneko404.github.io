@@ -1,7 +1,7 @@
 ---
 title: Pictologica Final Fantasy NE Screeshots
 layout: post
-category: Game
+tags: Game Screenshots FinalFantasy
 date: 2020-8-10
 ---
 

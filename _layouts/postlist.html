@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+
+  <article id="main_atcl" itemscope itemtype="http://schema.org/BlogPosting">
+    {{content}}
+    <!-- <h1 class="loa">POSTS</h1> -->
+
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="music">
+            {% include archive.html %}
+            <br/>
+            <br/>
+            <table>
+                <thead>
+                    <tr>
+                        <th> TITLE </th>
+                        <th> DATE </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for post in site.posts %}
+                    <tr>
+                        <td class="td_title"><a href="{{assets_base_url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a></td>
+                        <td class="td_date" width="20%">{{post.date | date: "%b %d, %y"}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </article>

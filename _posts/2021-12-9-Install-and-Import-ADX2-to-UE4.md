@@ -1,7 +1,7 @@
 ---
 title: Importing ADX2 to UE4
 layout: post
-category: Misc
+tags: GameDev UE
 date: 2021-12-9
 ---
 

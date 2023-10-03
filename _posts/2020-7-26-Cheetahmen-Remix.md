@@ -1,7 +1,7 @@
 ---
 title: Rise of the Cheetahmen -- Remix Project
 layout: post
-category: Music
+tags: Music Remix Cheetahmen
 date: 2020-7-26
 ---
 

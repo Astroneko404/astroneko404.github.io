@@ -1,7 +1,7 @@
 ---
 title: Krumhansl-Schmuckler Algorithm in Python
 layout: post
-category: Misc
+tags: Algorithms KeyDetection Music Python
 date: 2022-8-16
 ---
 Krumhansl-Schmuckler algorithm is a key finding algorithm based on pitch class distribution, that calculates the correlation between the pitch class distribution array, and each of the 12 major and 12 minor profile weights.

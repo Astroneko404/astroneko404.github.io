@@ -1,7 +1,7 @@
 ---
 title: PSN Platinum Trophy Thoughts No.111 - No.120
 layout: post
-category: Game
+tags: Game PlayStation
 date: 2020-5-22
 ---
 

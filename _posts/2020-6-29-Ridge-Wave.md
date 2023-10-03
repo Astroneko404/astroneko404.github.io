@@ -1,11 +1,11 @@
 ---
 title: R-WAVE -- A Ridge Racer Fan Remix Project
 layout: post
-category: Music
+tags: Music Remix RidgeRacer
 date: 2020-6-29
 ---
 
-Last month I was listening R4's OST, occasionally did some playback speed tricks and found some tracks sounds fantastic even at 0.75x speed. 
+Last month I was listening R4's OST, occasionally did some playback speed tricks and found some tracks sounds fantastic even at 0.75x speed.
 
 <img src="../music/remix/R_WAVE/cover.png" height = "200" />
 

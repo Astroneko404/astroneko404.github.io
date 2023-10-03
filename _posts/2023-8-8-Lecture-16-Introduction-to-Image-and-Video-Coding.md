@@ -1,7 +1,7 @@
 ﻿---
-title: Lecture 16 - Introduction to Image and Video Coding【Lecture Notes】
+title: "Lecture 16 - Introduction to Image and Video Coding【Lecture Notes】"
 layout: post
-category: Misc
+tags: VideoCoding
 date: 2023-8-8
 ---
 

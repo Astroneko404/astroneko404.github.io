@@ -10,6 +10,10 @@
   {% assign desc = site.description
   %}
   {% endif %}
+  <!-- tags -->
+  {% if site.tags != "" %}
+  {% include collecttags.html %}
+  {% endif %}
   <meta content="{{ desc }}" name="description" />
   <!-- referer for 3rd-part images-->
   <meta content="no-referrer" name="referrer" />

@@ -1,7 +1,7 @@
 ---
 title: XCURSOR THEME TUTORIAL v1.0
 layout: post
-category: Misc
+tags: xcursor Ubuntu
 date: 2019-9-27
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Battle at the Big Bridge Remix
 layout: post
-category: Music
+tags: Music FinalFantasy Remix
 date: 2018-5-13
 ---
 

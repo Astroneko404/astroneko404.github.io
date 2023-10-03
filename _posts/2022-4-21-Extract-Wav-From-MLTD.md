@@ -1,7 +1,7 @@
 ---
 title: Extract Wav Files from MLTD
 layout: post
-category: Game
+tags: Game Idolmaster
 date: 2022-4-21
 ---
 
@@ -24,7 +24,7 @@ After retrieving the asset list, slide down to assets starting with "song3".
 
 Some songs only have one file, such as Fermata in Rapsodia in the image above. (It is weird since the off-vocal version is in the in-game sound player)
 
-Some songs contain more than one files, those are for "一部歌い分け". 
+Some songs contain more than one files, those are for "一部歌い分け".
 Usually there are:
 * One preview version;
 * Different vocal parts;

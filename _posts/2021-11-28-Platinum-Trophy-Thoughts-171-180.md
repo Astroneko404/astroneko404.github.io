@@ -1,7 +1,7 @@
 ---
 title: PSN Platinum Trophy Thoughts No.171 - No.180
 layout: post
-category: Game
+tags: Game PlayStation
 date: 2021-11-28
 ---
 
