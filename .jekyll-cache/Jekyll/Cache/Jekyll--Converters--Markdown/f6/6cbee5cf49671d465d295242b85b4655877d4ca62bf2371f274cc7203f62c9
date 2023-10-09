@@ -1,0 +1,44 @@
+I"<p>Using existing tools only.</p>
+
+<h2 id="download-unity-assets">Download Unity Assets</h2>
+<p>First get the <a href="https://github.com/OpenMLTD/MLTDTools/" target="_blank">MLTDTools</a>, and run “ManifestTools.exe”.
+Then click “File” -&gt; “Open” -&gt; “Remote”.</p>
+
+<center>
+<img src="../../assets/img/misc/20220421184255.png" width="60%" />
+</center>
+
+<p><br />
+After retrieving the asset list, slide down to assets starting with “song3”.</p>
+
+<center>
+<img src="../assets/img/misc/20220421185443.png" width="50%" />
+</center>
+
+<p>Some songs only have one file, such as Fermata in Rapsodia in the image above. (It is weird since the off-vocal version is in the in-game sound player)</p>
+
+<p>Some songs contain more than one files, those are for “一部歌い分け”.
+Usually there are:</p>
+<ul>
+  <li>One preview version;</li>
+  <li>Different vocal parts;</li>
+  <li>One off-vocal version.</li>
+</ul>
+
+<p><br />
+After right click on assets and add them to the Pending Downloads list, go to the “Action” -&gt; “Download Selected Assets”.</p>
+
+<h2 id="unity3d-acb-assets-to-wav">Unity3d ACB Assets to WAV</h2>
+<p>To convert acb.unity3d files to acb files, there is an “ExtractAcb.exe” in the MLTDTools folder.
+Just drag acb.unity3d files on it.</p>
+
+<p><br />
+After converted those acb.unity3d files to acb files, we need to decrypt them to obtain the WAV files.</p>
+
+<p><a href="https://github.com/Rieksee/acbDecrypter" target="_blank">https://github.com/Rieksee/acbDecrypter</a></p>
+
+<p>Run “acbDecrypter.exe” in CMD and follow the instruction, those ACB files will be converted to WAV files.</p>
+
+<p><br />
+*Note: The “hcaToWav/復号鍵リスト.txt” file contains a decrypt key for MLTD, and I could confirm that it works in April, 2022.</p>
+:ET

@@ -13,14 +13,14 @@ First get the <a href="https://github.com/OpenMLTD/MLTDTools/" target="_blank">M
 Then click "File" -> "Open" -> "Remote".
 
 <center>
-<img src="../assets/img/misc/20220421184255.png" width="60%"/>
+<img src="../../assets/img/misc/20220421184255.png" width="500px"/>
 </center>
 
 <br/>
 After retrieving the asset list, slide down to assets starting with "song3".
 
 <center>
-<img src="../assets/img/misc/20220421185443.png" width="50%">
+<img src="../../assets/img/misc/20220421185443.png" width="500px">
 </center>
 
 Some songs only have one file, such as Fermata in Rapsodia in the image above. (It is weird since the off-vocal version is in the in-game sound player)

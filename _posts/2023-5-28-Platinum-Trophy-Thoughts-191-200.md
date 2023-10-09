@@ -54,9 +54,9 @@ Basically, it is a good game to kill time, but even so, I highly recommend buyin
 BTW, the box edition looks nice.
 
 <center>
-<img src="../assets/img/game/193454273-69380484-f031-463c-b0fb-c88703de7c94.JPG" width="80%">
-<img src="../assets/img/game/193454276-ac46e4bb-2378-4569-bbfa-d1b7eb76c905.JPG" width="80%">
-<img src="../assets/img/game/193454278-0e3b8ae8-6b6e-42f8-bc25-eb2e54f8ff89.JPG" width="80%">
+<img src="../../assets/img/game/193454273-69380484-f031-463c-b0fb-c88703de7c94.JPG" width="500px">
+<img src="../../assets/img/game/193454276-ac46e4bb-2378-4569-bbfa-d1b7eb76c905.JPG" width="500px">
+<img src="../../assets/img/game/193454278-0e3b8ae8-6b6e-42f8-bc25-eb2e54f8ff89.JPG" width="500px">
 </center>
 
 ## #195 Tsukihime -A piece of blue glass moon-
@@ -69,7 +69,7 @@ Don't get deceived by the first playthrough, since Arcueid's route conceals all 
 I wish not to spoil the whole story, so my review of the story ends here. If you possess the ability to read in Japanese, I would highly recommend this, and also Tsukihime -The other side of red garden-, which will be released in the future.
 
 <center>
-<img src="../assets/img/game/191969332-64d3841c-6fb4-48a9-a17e-b8797fd8f23d.jpg" width="80%">
+<img src="../../assets/img/game/191969332-64d3841c-6fb4-48a9-a17e-b8797fd8f23d.jpg" width="500px">
 </center>
 
 ## #196 - Final Fantasy (Pixel Remaster)

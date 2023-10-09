@@ -26,7 +26,7 @@ i.战斗次数在240以上的话会强制跳跃
 ii.战斗次数不到240的话，除以16取余，如果余数<字幕事件发生之前的分数（当前字幕事件分数不计入）的话，发生年代跳跃
 
 具体每个事件的分数可以参见此图：<br/>
-<img src="../assets/img/misc/d6eVnU.png" width="40%">
+<img src="../../assets/img/misc/d6eVnU.png" width="400px">
 
 （英文版的事件列表请参见Fandom Wikia：
 [https://saga.fandom.com/wiki/Generation_Mechanics](https://saga.fandom.com/wiki/Generation_Mechanics)）

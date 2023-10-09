@@ -12,7 +12,7 @@ date: 2021-1-29
 
 ## 大陆世界
 <center>
-<img src='../assets/img/misc/FFL-WorldOfContinent-Overworld.png' width='60%'>
+<img src='../../assets/img/misc/FFL-WorldOfContinent-Overworld.png' width='600px'>
 </center>
 
 （本攻略所有地图均转载自<a href="https://www.vgmaps.com/" target="_blank">VGMaps</a>）
@@ -60,13 +60,13 @@ date: 2021-1-29
 现在可以进到中间的塔了。
 
 ##### Tower
-塔的地图请参考<a href="../assets/img/misc/FFL-Tower.png" target="_blank">这里</a>。
+塔的地图请参考<a href="../../assets/img/misc/FFL-Tower.png" target="_blank">这里</a>。
 （图太长不方便贴）
 上到第五层的时候发现门被封印着，从最左边的门进去到海洋世界。
 
 ## 海洋世界
 <center>
-<img src='../assets/img/misc/FFL-WorldOfOcean-OverworldSurface.png' width='50%'><img src='../assets/img/misc/FFL-WorldOfOcean-OverworldSeafloor.png' width='50%'>
+<img src='../../assets/img/misc/FFL-WorldOfOcean-OverworldSurface.png' width='500px'><img src='../../assets/img/misc/FFL-WorldOfOcean-OverworldSeafloor.png' width='500px'>
 </center>
 
 ##### Floating Island
@@ -100,7 +100,7 @@ date: 2021-1-29
 
 ## 空中世界
 <center>
-<img src='../assets/img/misc/FFL-WorldOfSky-Overworld.png' width='60%'>
+<img src='../../assets/img/misc/FFL-WorldOfSky-Overworld.png' width='600px%'>
 </center>
 
 ##### Sky Town
@@ -130,7 +130,7 @@ date: 2021-1-29
 
 ## 都市世界
 <center>
-<img src='../assets/img/misc/FFL-WorldOfRuins-Overworld.png' width='60%'>
+<img src='../../assets/img/misc/FFL-WorldOfRuins-Overworld.png' width='600px'>
 </center>
 
 （地图有点大，可能需要放大了看）
@@ -166,7 +166,7 @@ date: 2021-1-29
 城里面除了Inn和复活屋以外，其他的NPC全都倒地了。然后在城里行走会有几率遭遇敌人。
 
 ##### Skyscraper
-（地图略大，就只放链接了：<a href="../assets/img/misc/FFL-WorldOfRuins-Skyscraper.png" target="_blank">摩天楼区域地图</a>）
+（地图略大，就只放链接了：<a href="../../assets/img/misc/FFL-WorldOfRuins-Skyscraper.png" target="_blank">摩天楼区域地图</a>）
 
 流程略长，如果装备储备不够的话，可能需要通过SL来避开刷怪。
 在打boss之前让我们的变种人队员装备好Stone魔法，之后可以对着boss一发入魂（X
@@ -191,5 +191,5 @@ Boss在血量掉到一定程度前不会发动攻击，之后会随机使用致�
 
 击败之后我们的主角们决定要返回自己的世界，之后就可以看走马灯Ending Credit了。
 <center>
-<img src='../assets/img/misc/IMG_0966.JPG' width='70%'>
+<img src='../../assets/img/misc/IMG_0966.JPG'>
 </center>
