@@ -1,4 +1,4 @@
-﻿---
+---
 layout: tagpage
 title: "Tag: MakaiToushiSaga"
 tag: MakaiToushiSaga

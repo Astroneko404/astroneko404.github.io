@@ -1,0 +1,47 @@
+I"�<p>This article is a note for the following presentation:
+<a href="https://cedec.cesa.or.jp/2023/session/detail/s6429a1da844ee">https://cedec.cesa.or.jp/2023/session/detail/s6429a1da844ee</a></p>
+
+<p>Pokemon cries are designed to be heard in either Pokedex or during battle, and it is dedicatedly designed by sound designers since there are no actual animals such as birds or bugs in the Pokemon world.</p>
+
+<h2 id="history-of-environmental-pokemon-cries">History of environmental Pokemon cries</h2>
+<p>The first Pokemon titles that include environmental Pokemon cries are Pokemon Ruby/Saphire. By adding Pokemon cries to the environment, players will be able to detect Pokemon around them. Advanced players will even be able to recognize Pokemon by their cries.</p>
+
+<h2 id="how-to-create-the-sound">How to create the sound</h2>
+<p>To test how Pokemon would sound in the game, sound designers visited a forest in Yokosuka. By placing small portable speakers with Pokemon cries randomly in the forest, it is possible to hear the re-amped version of Pokemon cries. Although the sound is of high quality, the recording will also capture birds tweeting from nature.</p>
+
+<p>To simulate the natural environment in the studio, the sound speakers are also placed randomly in a 4m by 4m room, and microphones are placed facing up near the ceiling so that they will mainly capture the reflected sounds. Later, the re-amped Pokemon cries sound will be added to the base environmental ambient sound.</p>
+
+<p>In Pokemon Sword/Shield, 3 types of environmental Pokemon cries are included: during the day, at night, and during the day when there are  Wooloos around, with no variations in each type. In Pokemon Legends: Arceus, all Pokemon’s cries vary depending on the distance. Due to the high quality and large size of sound assets, fewer Pokemon are included compared to main titles. In Pokemon Scarlet/Violet, effectors from Wwise are used to create a sense of distance, and Pokemon cries will match their traits.</p>
+
+<h4 id="the-evolution-of-pokemon-cries-sfx">The evolution of Pokemon cries SFX</h4>
+<p>There are several points noticed when discussing the Pokemon cries:</p>
+<ul>
+  <li>The variation of the audio files is low. There are only 5 types of cries in-game: in Pokedex, happy, angry, sad, and awareness. Most of them are added after Pokemon X/Y.</li>
+  <li>Pokemon cries in current titles are totally different from Pokemon Red/Green.</li>
+  <li>Pokemon cries are highly recognized by players. Suddenly adding lots of new cries might break the recognition.</li>
+  <li>There are already 1000+ Pokemon in the game.</li>
+</ul>
+
+<h4 id="how-pokemon-cries-in-pokemon-redgreen-was-made">How Pokemon cries in Pokemon Red/Green was made?</h4>
+<p>According to Mr. Masuda and Mr. Ichinose:</p>
+<ul>
+  <li>Pokemon are mysterious creatures instead of animals.</li>
+  <li>Pokemon are fictitious creatures.</li>
+  <li>The sound of lions should not be used for Pokemon that are inspired by lions.</li>
+  <li>It is important to be creative with the sound and to let players love the sound.
+Objects for sound designing</li>
+  <li>Increase the sound variation and expressiveness.</li>
+  <li>But also keep the original taste of the sound.</li>
+  <li>Generate sound assets efficiently.</li>
+  <li>Keep the same workflow from Pokemon Red/Green to the current generation.</li>
+</ul>
+
+<p>A tool called PokeSynth is developed based on Tsugi’s GameSynth, which allows sound designers to (1) use pen strokes to control the emotion of a sound, and (2) use the mic tool to morph Pokemon’s cries from human sound. These emotional sounds generated using PokeSynth are frequently used in cutscenes.
+How to play the sound
+In Pokemon Legend: Arceus, Pokemon cries match the corresponding environment. For example, some specific Pokemon will not appear while raining, then their cries will not spawn in rainy weather. Spawner objects that generate Pokemon cries are randomly placed on the map, and cries sound spawning depends on the distance between the player and the spawner objects.</p>
+
+<p>However, playing random sounds is not enough for expressiveness. In Pokemon Scarlet/Violet, Pokemon’s active area, time, weather, and traits are defined and controlled. Sound designers made an observation tour in Tobu Zoo. According to their observation, animal sounds may vary based on time and body size. Insect singing will be heard during both day and night, but bird chirping can only be heard during the day. Animals with smaller body sizes perform sounds more often but mammals will also perform sounds more often after reaching a specifically large body size. In order to simulate animals’ traits, Pokemon’s cries are also categorized into different types such as Bird Pokemon, Bug Pokemon, and so on.
+Audio Sequencer
+Is it possible to perform such a sound design in Wwise? The result is that using a Sequence Container with Delay or Trigger Rate or using an Event with Delay could be challenging. Hence, creating a data table to define the “features”, such as type, interval, random interval range, and emotion, of different types of Pokemon cries becomes a choice. Chaining these sequencers with different probability distributions will guarantee  Pokemon cries with more variety.</p>
+
+:ET

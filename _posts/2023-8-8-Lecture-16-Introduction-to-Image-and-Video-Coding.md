@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Lecture 16 - Introduction to Image and Video Coding【Lecture Notes】"
 layout: post
 tags: VideoCoding
