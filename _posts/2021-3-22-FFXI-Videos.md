@@ -2,6 +2,7 @@
 title: Final Fantasy XI Mission Video Archive [1080p]
 layout: post
 tags: Game FinalFantasy
+permalink: /posts/:title/
 date: 2021-3-22
 ---
 

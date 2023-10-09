@@ -2,6 +2,7 @@
 title: "Lecture 17 - Lossy Image Compression: DCT【Lecture Notes】"
 layout: post
 tags: VideoCoding
+permalink: /posts/:title/
 date: 2023-8-11
 ---
 

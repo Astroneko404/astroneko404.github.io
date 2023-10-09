@@ -2,6 +2,7 @@
 title: PSN Platinum Trophy Thoughts No.191 - No.200
 layout: post
 tags: Game PlayStation
+permalink: /posts/:title/
 date: 2023-5-28
 ---
 

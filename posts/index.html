@@ -1,0 +1,53 @@
+---
+layout: default
+post_list: "date"
+toc: false
+home_btn: true
+btn_text: true
+footer: true
+title: "POSTS | ASTRON LAGRANGE'S HOMEPAGE"
+author: "ASTRON"
+encrypted_text: true
+---
+<center>
+<h1 class="loa">POSTS</h1>
+</center>
+
+{% include archive.html %}
+<br/>
+<br/>
+
+<table>
+    <thead>
+        <tr><th> TITLE </th><th> DATE </th></tr>
+    </thead>
+    <tbody>
+        {% for post in paginator.posts %}
+        <tr>
+            <td class="td_title"><a href="{{assets_base_url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a></td>
+            <td class="td_date" width="20%">{{post.date | date: "%b %d, %y"}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<br/>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>

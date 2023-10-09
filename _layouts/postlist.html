@@ -1,9 +1,17 @@
 ---
-layout: default
+layout: postlist
+post_list: "date"
+toc: false
+home_btn: true
+btn_text: true
+footer: true
+title: "POSTS | ASTRON LAGRANGE'S HOMEPAGE"
+author: "ASTRON"
+encrypted_text: true
+permalink: /posts
 ---
 
-
-  <article id="main_atcl" itemscope itemtype="http://schema.org/BlogPosting">
+<article id="main_atcl" itemscope itemtype="http://schema.org/BlogPosting">
     {{content}}
     <!-- <h1 class="loa">POSTS</h1> -->
 
@@ -14,10 +22,7 @@ layout: default
             <br/>
             <table>
                 <thead>
-                    <tr>
-                        <th> TITLE </th>
-                        <th> DATE </th>
-                    </tr>
+                    <tr><th> TITLE </th><th> DATE </th></tr>
                 </thead>
                 <tbody>
                     {% for post in site.posts %}
@@ -30,4 +35,5 @@ layout: default
             </table>
         </div>
     </div>
-  </article>
+
+ </article>

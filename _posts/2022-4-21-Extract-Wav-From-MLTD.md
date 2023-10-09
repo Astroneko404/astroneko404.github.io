@@ -2,6 +2,7 @@
 title: Extract Wav Files from MLTD
 layout: post
 tags: Game Idolmaster
+permalink: /posts/:title/
 date: 2022-4-21
 ---
 

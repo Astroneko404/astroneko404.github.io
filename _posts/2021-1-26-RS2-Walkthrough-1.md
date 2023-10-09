@@ -2,6 +2,7 @@
 title: Romancing Saga 2（浪漫沙加2）流程向白金攻略（完全版）- Part 1
 layout: post
 tags: Game Walkthrough RomancingSaga
+permalink: /posts/:title/
 date: 2021-1-26
 ---
 

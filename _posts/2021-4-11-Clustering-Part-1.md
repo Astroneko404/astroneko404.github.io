@@ -2,6 +2,7 @@
 title: COMMON CLUSTERING ALGORITHMS (PART 1)
 layout: post
 tags: Algorithms MachineLearning Clustering
+permalink: /posts/:title/
 date: 2021-4-11
 ---
 

@@ -2,6 +2,7 @@
 title: Makai Toushi Saga（魔界塔士沙加）流程向攻略
 layout: post
 tags: Game Walkthrough MakaiToushiSaga Gameboy
+permalink: /posts/:title/
 date: 2021-1-29
 ---
 

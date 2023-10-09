@@ -2,6 +2,7 @@
 title: PSN Platinum Trophy Thoughts No.171 - No.180
 layout: post
 tags: Game PlayStation
+permalink: /posts/:title/
 date: 2021-11-28
 ---
 

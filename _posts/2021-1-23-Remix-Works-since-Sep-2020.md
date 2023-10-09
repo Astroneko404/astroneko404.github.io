@@ -2,6 +2,7 @@
 title: Remix Works Since Last September
 layout: post
 tags: Music Remix SuperMarioBros StreetsofRage SilentHill Persona
+permalink: /posts/:title/
 date: 2021-1-23
 ---
 

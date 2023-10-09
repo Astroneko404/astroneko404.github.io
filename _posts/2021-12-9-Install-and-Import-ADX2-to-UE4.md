@@ -2,6 +2,7 @@
 title: Importing ADX2 to UE4
 layout: post
 tags: GameDev UE
+permalink: /posts/:title/
 date: 2021-12-9
 ---
 
