@@ -1,0 +1,7 @@
+I"0<h2 id="the-usage-of-debuggers">The usage of debuggers</h2>
+<p>Although the Wwise profiler is excellent at sound debugging, there is information that could not be displayed in it, such as:</p>
+<ul>
+  <li>In-game coordinates of a sound</li>
+  <li>Information of a sound before sending to Wwise</li>
+</ul>
+:ET

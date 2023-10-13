@@ -1,0 +1,34 @@
+I".<h2 id="the-usage-of-debuggers">The usage of debuggers</h2>
+<p>Although the Wwise profiler is excellent at sound debugging, there is information that could not be displayed in it, such as:</p>
+<ul>
+  <li>In-game coordinates of a sound</li>
+  <li>Information of a sound before sending to Wwise</li>
+</ul>
+
+<h4 id="gizmo">Gizmo</h4>
+<p>It is utilized to display coordinates and distance upon sound playing.</p>
+
+<h4 id="objects">Objects</h4>
+<p>It is able to display all information of an AudioComponent such as:</p>
+<ul>
+  <li>GameSync (Switch/RTPC)</li>
+  <li>Motion</li>
+  <li>Trigger range
+BGMManager
+Although interactive music could be done exclusively using Wwise, this time the BGM layer is managed by BGMManager. The BGM transition could be modified in detail:</li>
+  <li>FadeIn/Out time</li>
+  <li>FadeIn/Out Curve</li>
+  <li>Delay Time</li>
+  <li>Hold Time</li>
+  <li>etc…
+Bugs could be detected on the timeline.
+History
+This could be used to check the PostEvent history, and the object name can be filtered.
+The debugging workflow when there is no sound played
+https://user-images.githubusercontent.com/33112694/274857708-05e3d078-ea26-45cb-aa91-150cc1249ec4.png
+Optimization with AudioGroup
+It is difficult to use Actor-Mixer/Master-Mixer Hierarchy to perform playback limiting for Pokemon games. Even when the same sound is produced from the same type of Pokemon using the same WwiseEvent, it is better to have different priority settings for the player’s Pokemon, Pokemon in the field, and Pokemon in battle.</li>
+</ul>
+
+<p>Therefore, the priority is set using GameObject groups. All types of events are placed in 3 categories: Player, Field, and Battle. Sounds in the Player AudioGroup will be guaranteed to play. If the number of sounds exceeds a specific value, some sounds in the Field AudioGroup will be removed.</p>
+:ET

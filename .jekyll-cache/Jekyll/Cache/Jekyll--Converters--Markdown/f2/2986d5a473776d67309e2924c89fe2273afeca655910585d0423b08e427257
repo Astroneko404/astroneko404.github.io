@@ -1,0 +1,53 @@
+I"y<p>This article is a note for the following presentation:
+<a href="https://cedec.cesa.or.jp/2023/session/detail/s6429a1da844ee" target="_blank">https://cedec.cesa.or.jp/2023/session/detail/s6429a1da844ee</a></p>
+
+<h2 id="history-of-environmental-sounds-in-the-pokemon-series">History of environmental sounds in the Pokemon series</h2>
+<p>Environmental SFX first appeared in Pokemon HeartGold/SoulSilver. SFX such as windmill spinning and water flowing were added to create a realistic experience. Back then, these SFX were mapped in the game manually, which caused intensive labor in development and debugging. The costs of SFX implementation increased after Pokemon Sun/Moon, especially in Nintendo Switch titles containing large maps.</p>
+
+<h2 id="environmental-sfx-from-now-on">Environmental SFX from now on</h2>
+<p>To create in-game reality, the following sounds have already been added to the game:</p>
+<ul>
+  <li>Pokemon cries (which was already introduced in Part 1)</li>
+  <li>Ambient sounds that match the theme of the field</li>
+  <li>Off-screen sounds</li>
+  <li>Sounds that create a feeling of traveling</li>
+  <li>Weather-related sounds</li>
+</ul>
+
+<h2 id="automatic-placement-of-environmental-sfx">Automatic placement of environmental SFX</h2>
+<h4 id="sound-playing-using-shapes">Sound playing using shapes</h4>
+<p>In Pokemon Legends: Arceus, triggers of basic shapes were utilized to play sounds:</p>
+<ul>
+  <li>If the listener is inside the trigger area, then the sound is played from the emitter in the center of the area.</li>
+  <li>If the listener is somewhere near the trigger area but not inside, then the sound is played from the emitter placed at the nearest outer edge of the area.</li>
+</ul>
+
+<p>This method may cause problems such as</p>
+<ul>
+  <li>High costs</li>
+  <li>Not being able to handle topographic changes</li>
+  <li>Handling complex terrain, such as river, could be difficult since it is hard to decide which point should be used to play the sound</li>
+</ul>
+
+<h4 id="sound-playing-using-multiple-points">Sound playing using multiple points</h4>
+<p>Hence multiple points are used. After including data for each point, the placement of environmental SFX will be finished automatically. No matter how many coordinates there are, only one sound will be played.</p>
+
+<h4 id="envsound-system">EnvSound system</h4>
+<p>This system is developed to utilize the multiple-point playing method better. It has the following steps:</p>
+<ul>
+  <li>Retrieve a list of points</li>
+  <li>Send the points that are audible to Wwise</li>
+  <li>If there is more than 1 point, then play the sound, otherwise stop it</li>
+</ul>
+
+<h4 id="properties-to-look-for-in-points-by-type">Properties to look for in points by type</h4>
+<p>Wood -&gt; Location<br />
+The sound of woods should be heard from a visible position, but since every tree in the game, as a GameObject, has location coordinates, adding EnvSoundComponent should be fine.</p>
+
+<p>Water -&gt; Direction<br />
+It is necessary to help players detect the location of a river or sea using sounds. Therefore, terrain information is added using Houdini. Along the borderline between water and land, a point is plotted every 5m. Meanwhile, information such as water type (river, sea, or lake) is also tagged.</p>
+
+<p>Grass -&gt; Density<br />
+The sound of grass should be different depending on its density. Since the data of grass coordinates are enormous, it would be better to collect grass information by grids in real time. Upon the player’s movement, the area to be loaded/unloaded will be updated. When the load/unload process exceeds a certain level, the sound from the previous frame will be carried over to the next frame.</p>
+
+:ET
