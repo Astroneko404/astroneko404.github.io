@@ -1,4 +1,4 @@
-﻿---
+---
 title: PSN Platinum Trophy Thoughts No.201 - No.210
 layout: post
 tags: Game PlayStation
