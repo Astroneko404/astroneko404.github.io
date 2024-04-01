@@ -52,14 +52,16 @@ Overall it is not bad, but compared to the Theatrhythm series it looks a little 
 
 \- Clearing all 450 maps and defeating 100k-enemy are too grindy, forcing players to spend more time on the game
 
-![](../assets/img/game/271176468-e8dff3e1-ad92-41c4-9b64-cc0f2d45b5ba.jpg)
+<center>
+<img src="../../assets/img/game/271176468-e8dff3e1-ad92-41c4-9b64-cc0f2d45b5ba.jpg" width="80%">
+</center>
 
 ## #204 - Unpacking
 *Difficulty: 1/10*
 
 Ｄｏｅｓ　ｃｏｎｓｕｍｅｒｉｓｍ　ｅｎｔｉｃｅ　ｕｓ　ｉｎｔｏ　ｕｎｌｉｍｉｔｅｄ　ｐｕｒｃｈａｓｉｎｇ？
 
-Anyway, with the accessibility feature on, it is just a clicking simulator, although the art style looks cute. 
+Anyway, with the accessibility feature on, it is just a clicking simulator, although the art style looks cute.
 
 ## #205 - Last Stop
 *Difficulty: 2/10*
@@ -71,7 +73,7 @@ The last chapter is totally beyond my expectations, and it does not seem to conn
 
 My turbo controller saved my life again.
 
-Like other Lego games, this game is pretty glitchy, but overall it's not that awful. 
+Like other Lego games, this game is pretty glitchy, but overall it's not that awful.
 
 \+ Everything adapted from the movies is awesome (story, music, etc)
 
@@ -107,7 +109,7 @@ It was the second time that I finished this game, but this time I tried to finis
 
 \+ A new maze was added in the remastered version
 
-\- Although the game displays every mob's location (unlike FF), it's frustrating 
+\- Although the game displays every mob's location (unlike FF), it's frustrating
 
 ## #209 - Final Fantasy VII Remake (PS5)
 *Difficulty: 1/10*
