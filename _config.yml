@@ -1,7 +1,7 @@
 ## Settings
 title: "ASTRON LAGRANGE'S HOMEPAGE"
 owner: "ASTRON"
-url: "https://astroneko404.github.io/"
+url: "https://astroneko404.github.io"
 baseurl: ""
 permalink: /:title/
 description: ""
