@@ -1,17 +1,4 @@
----
-layout: default
-post_list: "date"
-toc: false
-home_btn: true
-btn_text: true
-footer: true
-title: "ASTRON LAGRANGE'S HOMEPAGE"
-author: "ASTRON"
-encrypted_text: true
-permalink: /
----
-
-<div class="ascii">
+I"	<div class="ascii">
 　　　　　　　　　　　.....　－－　.
 　　　　　　　 ..　'　　　　　　　　　 ｀ヽ
 　　　　 　／　　　　 ,　　　　　　　　　 lヽ
@@ -20,7 +7,7 @@ permalink: /
 　　　　ﾚ　 .:::::::/￣l　..::::フ`　l　　 ..:::::l∠､　l
 　　　　 l:: :::::::l ●　＼厂 ●/　 ﾉ:://　　　l .ト ､
 　　　　 .ヽ:::::l　　　　　　　∠. ィ　 l .l　　　/::.l::::⊥..　　　　　
-　　 ,　'　:::トl　　　 ヽ_ﾌ　 　　l　 ::::>ヽ__／::::↓　〃....｀ヽ
+　　 ,　'　:::トl　　　 ヽ_ﾌ　 　　l　 ::::&gt;ヽ__／::::↓　〃....｀ヽ
 　 /　　ο゜ゝ-‐‐ー､　　 　 ..::l :::/　｀::::::l ::::::::ｷ:´ｏО:::::.ｌ
 　 ﾚ ･ ´　　　..::..、　 l┬=:::~フﾚ　　　:::::l::::::::::::::::＼б:::/
 　/　　ｏ::〇σ⊂l:::ノ::ﾉﾉ::ノ　 ..．- 　_ノ_:::::::::ﾉ　.l ::::Ｖ
@@ -37,28 +24,30 @@ WELCOME, &lsaquo;USER&rsaquo;
 ASTRON LAGRANGE (AKA ASTRON2L), THE OWNER OF THIS HOMEPAGE, IS
 <br />
 
-* AN ENTHUSIAST OF VIDEO GAME, VGM & RETRO ART<br/>
-* COMPOSER & AUDIO ENGINEER<br/>
-* FREELANCE RESEARCHER ON DATA SCIENCE / NLP<br/>
+* AN ENTHUSIAST OF VIDEO GAME, VGM &amp; RETRO ART<br />
+* COMPOSER &amp; AUDIO ENGINEER<br />
+* FREELANCE RESEARCHER ON DATA SCIENCE / NLP<br />
 * THE WEATHER CHANNEL LOVER
 </p>
-<br/><br/>
+<p><br /><br /></p>
 
-<hr>
+<hr />
+
 <p align="left">
 Other sites you may interested in:
-<br/><br/>
-* <a href="https://www.soukin.net" target="_blank">叔音OKATU的不正常玩家避难所管理室</a>
+<br /><br />
+* <a href="www.soukin.net" target="_blank">叔音OKATU的不正常玩家避难所管理室</a>
 </p>
-<hr>
+<hr />
 
-<br/>
-<a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github fa"></i></a>
-&nbsp;
+<p><br />
+<a href="https://github.com/Astroneko404" target="_blank"><i class="fa fa-github fa"></i></a>
+ 
 <a href="https://www.youtube.com/c/AstronLagrange" target="_blank"><i class="fa fa-youtube fa"></i></a>
-&nbsp;
+ 
 <a href="https://open.spotify.com/artist/0f16PP21G5v3N9qAVTh6wR" target="_blank"><i class="fa fa-spotify fa"></i></a>
-&nbsp;
+ 
 <a href="https://soundcloud.com/astron_lagrange" target="_blank"><i class="fa fa-soundcloud fa"></i></a>
-&nbsp;
-<a href="https://astroneko404.bandcamp.com/" target="_blank"><i class="fa fa-bandcamp fa"></i></a>
+ 
+<a href="https://astroneko404.bandcamp.com/" target="_blank"><i class="fa fa-bandcamp fa"></i></a></p>
+:ET
