@@ -12,30 +12,31 @@ $color-postbg: rgb(0, 0, 0);
 $image-background: none;
 @font-face {
   font-family: "Fira Code Online";
-  src: url("../fonts/FiraCode-VF.woff");
+  src: url("https://github.com/Astroneko404/astroneko404.github.io/raw/refs/heads/master/assets/fonts/FiraCode-VF.woff");
 }
 @font-face {
     font-family: "Mona";
-    src: url("https://github.com/Astroneko404/astroneko404.github.io/blob/master/assets/fonts/mona.ttf");
+    src: url("https://github.com/Astroneko404/astroneko404.github.io/raw/refs/heads/master/assets/fonts/mona.ttf");
 }
 @font-face {
     font-family: "Fira Mono";
-    src: url("https://github.com/Astroneko404/astroneko404.github.io/blob/master/assets/fonts/FiraMono-Regular.ttf");
+    src: url("https://github.com/Astroneko404/astroneko404.github.io/raw/refs/heads/master/assets/fonts/FiraMono-Regular.ttf");
 }
 $font-family:
-"Fira Code",
-"Source Code Pro",
-"Fira Code Online",
-"Source-Han-Sans-Medium",
-"PingFang SC",
-"Hiragino Sans GB",
-"Heiti SC",
-"Microsoft YaHei",
-"WenQuanYi Micro Hei",
-Helvetica,
-Tahoma,
-Arial,
-sans-serif;
+"Courier", monospace;
+// "Fira Code",
+// "Source Code Pro",
+// "Fira Code Online",
+// "Source-Han-Sans-Medium",
+// "PingFang SC",
+// "Hiragino Sans GB",
+// "Heiti SC",
+// "Microsoft YaHei",
+// "WenQuanYi Micro Hei",
+// Helvetica,
+// Tahoma,
+// Arial,
+// sans-serif;
 $font-size-h1: 25px;
 $font-size-h2: 25px;
 $font-size-h3: 21px;
@@ -61,7 +62,7 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
   font-size: $font-size-primary;
   color: $color-primary;
   // font-family: $font-family;
-  font-family: "Courier";
+  font-family: $font-family;
   .div_bg {
     top: -4px;
     height: 100%;
@@ -83,7 +84,8 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
   .ascii {
       border-style: solid;
       white-space: pre;
-      font-family: "Mona", "Fira Mono", monospace;
+      // font-family: "Hiragino Sans", monospace;
+      font-family: "Klee", monospace;
       overflow-x: auto;
   }
   .container {
@@ -142,7 +144,7 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
               text-transform: capitalize;
               // font-family: $font-family;
               font-family: "Courier";
-              font-size: $font-smaller;
+              font-size: $font-family;
             }
             .btn_text:hover {
               font-weight: 400;

@@ -4,3 +4,5 @@ group :jekyll_plugins do
   gem "rouge"
   gem "jekyll-watch"
 end
+
+gem "webrick", "~> 1.9"
