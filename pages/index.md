@@ -41,18 +41,20 @@ ASTRON LAGRANGE (AKA ASTRON2L, むむむP), THE OWNER OF THIS HOMEPAGE, IS
 * COMPOSER & AUDIO ENGINEER<br/>
 * FREELANCE RESEARCHER ON DATA SCIENCE / NLP<br/>
 * THE WEATHER CHANNEL LOVER
+<br/>
 </p>
-<br/><br/>
 
+<iframe src="https://www.google.com/maps/d/embed?mid=1XX5pparptsFFwEzNQLtEDSVsn__IEx4&ehbc=2E312F&noprof=1" width="640" height="360"></iframe>
 <hr>
+
 <p align="left">
 Other sites you may interested in:
 <br/><br/>
 * <a href="https://www.soukin.net" target="_blank">叔音OKATU的不正常玩家避难所管理室</a>
 </p>
+<br/>
 <hr>
 
-<br/>
 <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github fa"></i></a>
 &nbsp;
 <a href="https://www.youtube.com/c/AstronLagrange" target="_blank"><i class="fa fa-youtube fa"></i></a>
@@ -62,3 +64,5 @@ Other sites you may interested in:
 <a href="https://soundcloud.com/astron_lagrange" target="_blank"><i class="fa fa-soundcloud fa"></i></a>
 &nbsp;
 <a href="https://astroneko404.bandcamp.com/" target="_blank"><i class="fa fa-bandcamp fa"></i></a>
+&nbsp;
+<a href="https://x.com/astroneko404" target="_blank"><i class="fa fa-x fa"></i></a>
