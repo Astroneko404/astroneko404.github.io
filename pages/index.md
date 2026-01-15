@@ -43,9 +43,10 @@ ASTRON LAGRANGE (AKA ASTRON2L, むむむP), THE OWNER OF THIS HOMEPAGE, IS
 * THE WEATHER CHANNEL LOVER
 <br/>
 </p>
-
-<iframe src="https://www.google.com/maps/d/embed?mid=1XX5pparptsFFwEzNQLtEDSVsn__IEx4&ehbc=2E312F&noprof=1" width="640" height="360"></iframe>
 <hr>
+
+<!-- <iframe src="https://www.google.com/maps/d/embed?mid=1XX5pparptsFFwEzNQLtEDSVsn__IEx4&ehbc=2E312F&noprof=1" width="640" height="360"></iframe>
+<hr> -->
 
 <p align="left">
 Other sites you may interested in:
