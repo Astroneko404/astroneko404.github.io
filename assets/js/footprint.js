@@ -54,21 +54,35 @@ const overlay = new ol.Overlay({
 
 map.addOverlay(overlay);
 
-map.on('pointermove', function (evt) {
-  const feature = map.forEachFeatureAtPixel(evt.pixel, f => f);
-
-  if (feature) {
-    const coords = feature.getGeometry().getCoordinates();
-    const imageUrl = feature.get('image');
-    const name = feature.get('name');
-
-    popupImg.src = imageUrl;
-    popupTitle.innerText = name;
-
-    popup.style.display = 'block';
-    overlay.setPosition(coords);
-  } else {
-    popup.style.display = 'none';
-  }
+const selectHover = new ol.interaction.Select({
+  condition: ol.events.condition.pointerMove,
+  layers: [markerLayer],
+  hitTolerance: 5
 });
 
+map.addInteraction(selectHover);
+
+selectHover.on('select', function (e) {
+  const feature = e.selected[0];
+
+  if (!feature) {
+    popup.style.display = 'none';
+    return;
+  }
+
+  let coords = feature.getGeometry().getCoordinates().slice();
+  const view = map.getView();
+  const center = view.getCenter();
+
+  const worldWidth = ol.extent.getWidth(
+    ol.proj.get('EPSG:3857').getExtent()
+  );
+
+  coords[0] += Math.round((center[0] - coords[0]) / worldWidth) * worldWidth;
+
+  popupImg.src = feature.get('image');
+  popupTitle.innerText = feature.get('name');
+
+  popup.style.display = 'block';
+  overlay.setPosition(coords);
+});

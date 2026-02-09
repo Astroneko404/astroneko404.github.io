@@ -1,7 +1,7 @@
 ---
 layout: tagpage
-title: "Tag: RomancingSaGa"
-tag: RomancingSaGa
+title: "Tag: NARS"
+tag: NARS
 robots: noindex
 toc: false
 ---
