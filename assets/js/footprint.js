@@ -1,16 +1,21 @@
+// OpenFreeMap dark basemap
+const openfreemap = new ol.layer.Group();
+
 const map = new ol.Map({
   target: 'map',
-  layers: [
-    new ol.layer.Tile({
-      source: new ol.source.XYZ({
-        url: 'https://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
-      }),
-    }),
-  ],
+  layers: [openfreemap],
   view: new ol.View({
-    center: ol.proj.fromLonLat([165, 35]), // always project lon/lat
+    center: ol.proj.fromLonLat([165, 35]),
     zoom: 2.5,
   }),
+});
+
+// Load OpenFreeMap dark style
+olms.apply(
+  openfreemap,
+  'https://tiles.openfreemap.org/styles/dark'
+).catch(error => {
+  console.error('Failed to load OpenFreeMap:', error);
 });
 
 // Add a marker
