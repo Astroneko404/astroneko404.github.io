@@ -50,19 +50,13 @@ ASTRON LAGRANGE (AKA ASTRON2L, むむむP), THE OWNER OF THIS HOMEPAGE, IS
 &nbsp;
 <a href="https://open.spotify.com/artist/0f16PP21G5v3N9qAVTh6wR" target="_blank"><i class="fa fa-spotify fa"></i></a>
 &nbsp;
-<a href="https://soundcloud.com/astron_lagrange" target="_blank"><i class="fa fa-soundcloud fa"></i></a>
-&nbsp;
 <a href="https://astroneko404.bandcamp.com/" target="_blank"><i class="fa fa-bandcamp fa"></i></a>
 &nbsp;
 <a href="https://x.com/astroneko404" target="_blank"><i class="fa fa-x fa"></i></a>
 
 <hr>
 
-<!-- <iframe src="https://www.google.com/maps/d/embed?mid=1XX5pparptsFFwEzNQLtEDSVsn__IEx4&ehbc=2E312F&noprof=1" width="640" height="360"></iframe>
-<hr> -->
-
-<!-- <h3>Portfolio</h3> -->
-In case something concise is what you are looking for, here are some pick-up works I've done.
+In case something concise is what you are looking for, here are some pick-ups.
 <br/>
 <br/>
 <b>Music:</b>
