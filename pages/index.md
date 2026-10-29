@@ -62,9 +62,7 @@ In case something concise is what you are looking for, here are some pick-ups.
 <b>Music:</b>
 <div class="music-list">
     <div class="music-row">
-        <span class="music-title">
-            [Dark][Experimental][PSX]
-        </span>
+        <span class="music-title">[Dark][Experimental][PSX]</span>
         <iframe
             class="music-player"
             src="https://bandcamp.com/EmbeddedPlayer/album=2616617754/size=small/bgcol=333333/linkcol=2ebd35/track=2740017668/transparent=true/"
@@ -72,9 +70,7 @@ In case something concise is what you are looking for, here are some pick-ups.
         </iframe>
     </div>
     <div class="music-row">
-        <span class="music-title">
-            [Dark][Ambient][PSX]
-        </span>
+        <span class="music-title">[Dark][Ambient][PSX]</span>
         <iframe
             class="music-player"
             src="https://bandcamp.com/EmbeddedPlayer/album=3253430272/size=small/bgcol=333333/linkcol=2ebd35/track=2148906023/transparent=true/"
@@ -82,9 +78,7 @@ In case something concise is what you are looking for, here are some pick-ups.
         </iframe>
     </div>
     <div class="music-row">
-        <span class="music-title">
-            [Dark][Synthwave][PSX]
-        </span>
+        <span class="music-title">[Dark][Synthwave][PSX]</span>
         <iframe
             class="music-player"
             src="https://bandcamp.com/EmbeddedPlayer/album=3359096746/size=small/bgcol=333333/linkcol=2ebd35/track=4285070161/transparent=true/"
@@ -92,36 +86,35 @@ In case something concise is what you are looking for, here are some pick-ups.
         </iframe>
     </div>
     <div class="music-row">
-        <span class="music-title">
-            [Lofi][Electronica][Jazz]
-        </span>
+        <span class="music-title">[Lofi][Electronica][Jazz]</span>
         <iframe class="music-player"
             src="https://bandcamp.com/EmbeddedPlayer/album=3310841692/size=small/bgcol=333333/linkcol=2ebd35/track=272836692/transparent=true/"
             seamless>
         </iframe>
     </div>
     <div class="music-row">
-        <span class="music-title">
-            [Cinematic][Ethnic][Soundscape]
-        </span>
+        <span class="music-title">[Cinematic][Ethnic][Soundscape]</span>
         <iframe class="music-player"
             src="https://bandcamp.com/EmbeddedPlayer/album=4183010963/size=small/bgcol=333333/linkcol=2ebd35/track=3096072934/transparent=true/"
             seamless>
         </iframe>
     </div>
     <div class="music-row">
-        <span class="music-title">
-            [Odd Time Signature][Retro]
-        </span>
+        <span class="music-title">[Odd Time Signature][Retro]</span>
         <iframe class="music-player"
             src="https://bandcamp.com/EmbeddedPlayer/album=2059081479/size=small/bgcol=333333/linkcol=2ebd35/track=3708896845/transparent=true/"
             seamless>
         </iframe>
     </div>
     <div class="music-row">
-        <span class="music-title">
-            [Energetic][Electronica][Retro]
-        </span>
+        <span class="music-title">[Chiptune][Retro][Rock]</span>
+        <iframe class="music-player"
+            src="https://bandcamp.com/EmbeddedPlayer/album=1437399836/size=small/bgcol=333333/linkcol=2ebd35/track=4140604170/transparent=true/" 
+            seamless>
+        </iframe>
+    </div>
+    <div class="music-row">
+        <span class="music-title">[Energetic][Electronica][Retro]</span>
         <iframe class="music-player"
             src="https://bandcamp.com/EmbeddedPlayer/album=4090715874/size=small/bgcol=333333/linkcol=2ebd35/track=906548138/transparent=true/"
             seamless>

@@ -167,7 +167,6 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
         padding: 0 50px;
         font-size: $font-smaller;
       }
-      // abstract
       .abstract {
         padding: 20px 20px;
         p {
@@ -180,7 +179,10 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
         padding: 10px 15px 0px 15px;
         text-align: left !important;
         min-height: 85%;
-        // code highlight
+        p {
+          margin-bottom: 20px;
+          line-height: 1.6;
+        }
         pre {
           border: 0.6px solid $color-primary;
         }
